@@ -1,0 +1,107 @@
+# LeafRTP (modrinth TZNIQSHX) - the foundry's core rtp config.
+#
+# SOURCE (read 08-30-2026): this file is the mod's own shipped default with four values changed.
+#   https://github.com/DailyStruggle/RTP/blob/3.2.1/rtp-plugin/src/main/resources/config.yml
+#   path on neoforge: https://github.com/DailyStruggle/RTP/blob/3.2.1/platforms/rtp-neoforge/rtp-neoforge-common/src/main/java/io/github/dailystruggle/rtp/neoforge/server/NeoForgeServerAccessor.java
+#     -> FMLPaths.CONFIGDIR.get().resolve("rtp"), ie config/rtp/. the header comments below say
+#        "plugins/RTP/" in the upstream docs because "LeafRTP" is DailyStruggle's bukkit plugin
+#        RTP with a neoforge adapter on it. ignore the bukkit paths.
+#
+# THIS IS THE ONLY FILE WE SHIP. the mod writes ~20 more (safety.yml, economy.yml, language.yml,
+# definitions/regions/, definitions/worlds/, advanced/) on first boot and their defaults are fine.
+# the "regions/" and "messages/" folder names in the comment block below are stale upstream text:
+# the real dirs are definitions/regions/ and advanced/messages/.
+#
+# WHAT WE CHANGED, and why:
+#   teleportDelay      2   -> 0     ftb ran every warmup at 0 and so does the hearth; one answer
+#                                   to "does it make me stand still", not two
+#   teleportCooldown   300 -> 120   ftbessentials.snbt had teleportation.rtp.cooldown = 120
+#   defaults.shape.radius        256 -> 625   RADIUS IS IN CHUNKS. 625 * 16 = 10000 blocks,
+#                                   which is the old teleportation.rtp.max_distance
+#   defaults.shape.centerRadius   64 -> 32    32 * 16 = 512 blocks, the old min_distance of 500
+#                                   rounded to a whole chunk
+#   consoleCommands    say ... -> ""  the stock default broadcasts every single /rtp to chat
+#
+# THE END IS ALREADY EXCLUDED, no key needed. there is no disabledWorlds / dimension blacklist in
+# this mod. the destination belongs to the REGION, not to the caller's dimension: the stock
+# `default` region is world "[0]" (the overworld) and every generated world file routes to it, so
+# /rtp from the end or the nether already lands you in the overworld. that is the same outcome the
+# old ftb `rtp.dimension_blacklist: ["minecraft:the_end"]` was buying.
+
+# --- RTP Core Configuration ---
+# Documentation: https://github.com/DailyStruggle/RTP/wiki/Core-Configuration
+# Pick your language in language.yml.
+#
+# Seconds to wait before teleporting. 0 = right away.
+# @default: 2
+teleportDelay: 0
+
+# How far you can move before the teleport cancels. Moot at teleportDelay 0, left at stock.
+# @default: 2
+cancelDistance: 2
+
+# Wait time between /rtp uses. Skipped by rtp.nocooldown.
+# @default: 300
+teleportCooldown: 120
+
+# Max /rtp uses before lockout. 0 = no limit. Skipped by rtp.nolock.
+lockAfterUses: 0
+
+# Seconds until the use count resets. 0 = never resets.
+lockAfterResetSeconds: 0
+
+# true = set your spawn point where you land.
+setRespawnOnTeleport: false
+
+# Console commands run after teleport. [player] = the player's name.
+# stock default here is "say [player] has just randomly teleported!" - dropped, empty entry
+# is how this mod's own playerCommands default expresses "nothing".
+consoleCommands:
+  - ""
+
+# Commands run as the player after teleport. [player] = their name.
+playerCommands:
+  - ""
+
+# Menu look. renderer = list of styles to try in order.
+menu:
+  # @options: ["book", "chat"]
+  renderer:
+    - "book"
+
+# Shared defaults. A region/world value of "@config" copies the matching entry below,
+# so you change a setting once here instead of in every region file.
+defaults:
+  # Default area shape and size. radius/centerRadius = how far out you land, IN CHUNKS.
+  shape:
+    name: "CIRCLE"
+    mode: "ACCUMULATE"
+    radius: 625
+    centerRadius: 32
+    centerX: 0
+    centerZ: 0
+    weight: 1.0
+    # Keep spots from being reused. 0 = off, 1 = the landing chunk, N = bigger square.
+    uniquePlacements: 0
+    expand: false
+  # Default high/low landing window.
+  vert:
+    name: "LINEAR"
+    minY: 32
+    maxY: 255
+    # Search order: 0 = bottom-up, 1 = top-down, 2 = middle-out, 3 = edges-in, else random.
+    direction: 2
+    requireSkyLight: true
+  # How many safe spots to pre-calculate.
+  cacheCap: 50
+  # Extra unverified spots kept ready. 0 = off.
+  backlogCacheCap: 1000
+  # Max chunks kept loaded for instant teleports.
+  activeChunkCap: 10
+  # Bad-spot tracking precision (1-5).
+  spatialResolution: 3
+  # Whether regions/worlds need permission.
+  requirePermission: false
+
+# DO NOT TOUCH VERSION NUMBER
+version: 3.1

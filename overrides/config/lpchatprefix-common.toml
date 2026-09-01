@@ -1,0 +1,11 @@
+# lpchatprefix - luckperms prefix in chat, same shape as the hearth's styled
+# chat: `<[rank] Name> message`. keep the angle brackets: calcifer's parser
+# (src/parser.js CHAT_RE) reads `<(?:[tag] )?name> msg` from the log, and the
+# relay silently stops if the shape changes. prefixes live in luckperms
+# (`lp group <g> meta setprefix "&7[rank] "`), same groups as the hearth.
+["LPChatPrefix Config"]
+	enablePrefix = true
+	enableSuffix = false
+	messageFormat = "<{prefix}{player}> {message}"
+	messageColor = "white"
+	nameColor = "white"
