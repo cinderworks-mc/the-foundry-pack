@@ -1,0 +1,103 @@
+# Essential Commands (modrinth mkkA9ILT, mod id rift_essentials) - the foundry's config.
+#
+# SOURCES (read 08-30-2026, and cross-checked against the shipped jar
+# essentials-neoforge-1.0.0.jar from cdn.modrinth.com/data/mkkA9ILT/versions/P4CE47vz/):
+#   https://github.com/voxelrift/essentials/blob/v1.0.0/common/src/main/java/org/voxelrift/essentials/EssentialsConfig.java
+#   https://github.com/voxelrift/essentials/blob/v1.0.0/common/src/main/java/org/voxelrift/essentials/Permissions.java
+#   https://github.com/voxelrift/essentials/blob/v1.0.0/common/src/main/java/org/voxelrift/essentials/LuckPermsHook.java
+#   https://github.com/voxelrift/essentials/blob/v1.0.0/common/src/main/java/org/voxelrift/essentials/command/TeleportAskCommand.java
+#
+# THE PATH IS EXACT: EssentialsConfig.load() does Path.of("config", "essential.commands.toml").
+# note the DOT, not an underscore. it only writes the file when it does not already exist, so
+# this hand-authored copy survives - the mod will never overwrite it and never back-fill a key.
+#
+# PARSER RULES (it is hand-rolled, not a toml library):
+#   - sectioned: [section] headers, then key = value
+#   - it strips anything from a '#' onward INSIDE A VALUE, so never put a '#' on a value line.
+#     every comment here is on its own line for that reason.
+#   - unknown keys and sections are silently ignored; a malformed int/bool silently falls back
+#     to the code default. a typo here fails quiet, so diff it against the source if something
+#     does not take.
+#
+# READ THIS BEFORE YOU BOOT - the luckperms trap:
+#   Permissions.check() is `if (LUCKPERMS_PRESENT && source is a player) return LuckPermsHook
+#   .check(uuid, node);` with NO fallback to op level. luckperms IS in this pack. so for every
+#   command that is not gated by an `op_only = true` switch, the ONLY thing that grants it is an
+#   explicit luckperms node - vanilla op does not help, and neither does being the server owner.
+#   setting op_only = false below does NOT open a command up, it moves it from "op level 2" to
+#   "whatever luckperms says", which for a fresh default group is: no.
+#
+#   so the deploy needs this on the box, once, or /home and friends are dead for everyone:
+#     lp group default permission set rift_essentials.command.* true
+#   (see notes/ftb-exit-08-30.md for the full node list and the exact commands.)
+#
+# GATING IS READ AT COMMAND-REGISTRATION TIME. `/essentials reload` re-reads this file but the
+# brigadier `requires` lambdas already captured the old config object, so any change to an
+# enabled/op_only key needs a full SERVER RESTART, not a /reload.
+#
+# player data (homes, warps, /back history, nicks, /seen) lives in
+# <world>/data/rift_essentials.dat, not here.
+
+[general]
+# shows up as "[the foundry Essentials]" in this mod's chat prefixes
+server_name = "the foundry"
+
+[homes]
+enabled = true
+# must stay true or /homes stops registering entirely and /home loses its <name> argument
+multiple_homes = true
+# hearth parity. ftbessentials.snbt had teleportation.home.max = 3
+max_homes = 3
+op_only = false
+# ftb ran every warmup at 0 and so does the hearth. picking 0 everywhere rather than the mod's
+# default 5, so there is one answer to "does it make me stand still" instead of two.
+warmup_seconds = 0
+# ftbessentials.snbt had teleportation.home.cooldown = 10
+cooldown_seconds = 10
+
+[back]
+enabled = true
+# REQUIRED. this defaults to TRUE in the mod, and the guide book promises /back to everyone.
+op_only = false
+warmup_seconds = 0
+# ftbessentials.snbt had teleportation.back.cooldown = 10
+cooldown_seconds = 10
+
+[tpa]
+enabled = true
+timeout_seconds = 60
+warmup_seconds = 0
+# ftbessentials.snbt had teleportation.tpa.cooldown = 10
+cooldown_seconds = 10
+
+[warps]
+# op still sets and deletes warps, same as ftb and same as fuji on the hearth. this switch is
+# only about who may USE /warp.
+enabled = true
+op_only = false
+warmup_seconds = 0
+cooldown_seconds = 10
+
+[spawn]
+enabled = true
+op_only = false
+warmup_seconds = 0
+cooldown_seconds = 10
+
+[enderchest]
+# /ec is this mod's own alias, which is why foundry_aliases.js no longer registers one
+enabled = true
+# defaults to TRUE in the mod. the hearth gives everyone /ec, so match it.
+op_only = false
+
+[workbench]
+# /craft is this mod's own alias
+enabled = true
+# defaults to TRUE in the mod
+op_only = false
+
+[other]
+# ftb had /near on for everyone
+near_op_only = false
+# /seen is new here (ftb-essentials had no equivalent). casual friends server, leave it open.
+seen_op_only = false

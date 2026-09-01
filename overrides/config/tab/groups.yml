@@ -1,0 +1,29 @@
+# the foundry - TAB per-group properties. one row shape for everyone; the only
+# thing that varies per player is what luckperms hands back for the prefix.
+#
+#   [flame] Patrick  38ms
+#   `-----'  `-----'  `--'
+#    lp prefix  name   TAB's own per-player ping
+#    (carries its own
+#     trailing space)
+#
+# the hearth's row has a playtime column between the name and the ping
+# (%hearth:playtime%, out of hearth-additions through the fabric placeholder
+# api). there is no equivalent here yet - the foundry's playtime lives in
+# kubejs/server_scripts/foundry_playtime.js and is not exposed as a TAB
+# placeholder - so the column is simply absent rather than faked.
+#
+# %luckperms-prefix% is TAB's OWN luckperms hook (dash), not a placeholder-api
+# lookup (colon). the hearth's side goes through placeholder-api because that
+# is what styled-chat already feeds chat/join/leave from; there is no
+# styled-chat here, lpchatprefix does chat off the same lp prefix.
+#
+# tagprefix/tagsuffix are deliberately empty. scoreboard-teams is ON in
+# config.yml for the sorting, but the foundry has never had overhead rank tags
+# and this is not the change that adds them.
+_DEFAULT_:
+  tabprefix: "%luckperms-prefix%"
+  customtabname: "%player%"
+  tabsuffix: "<#5c5245>  %ping%ms"
+  tagprefix: ""
+  tagsuffix: ""
