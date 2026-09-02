@@ -16,7 +16,7 @@ server address: `modded.cinderworks.dev`
 
 ## install
 
-1. get the newest `.mrpack` from [releases](https://github.com/cinderworks-mc/the-foundry-pack/releases) or the [pack page](https://cinderworks.dev/foundry/pack/)
+1. get the newest `.mrpack` from [modrinth](https://modrinth.com/modpack/the-foundry-pack), [releases](https://github.com/cinderworks-mc/the-foundry-pack/releases) or the [pack page](https://cinderworks.dev/foundry/pack/)
 2. in the [modrinth app](https://modrinth.com/app): add instance, then from file, then pick the `.mrpack`
 3. join `modded.cinderworks.dev` (it is already in your server list)
 
