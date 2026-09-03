@@ -16,11 +16,18 @@ server address: `modded.cinderworks.dev`
 
 ## install
 
-1. get the newest `.mrpack` from [modrinth](https://modrinth.com/modpack/the-foundry-pack), [releases](https://github.com/cinderworks-mc/the-foundry-pack/releases) or the [pack page](https://cinderworks.dev/foundry/pack/)
-2. in the [modrinth app](https://modrinth.com/app): add instance, then from file, then pick the `.mrpack`
-3. join `modded.cinderworks.dev` (it is already in your server list)
+easiest: open [the pack on modrinth](https://modrinth.com/modpack/the-foundry-pack)
+and hit install in the [modrinth app](https://modrinth.com/app). it builds the
+instance and keeps it updated on its own, so a new pack version is just a
+restart. prism launcher adds it straight from modrinth search too.
 
-prism launcher and atlauncher import `.mrpack` files too.
+rather hold the file yourself? grab the newest `.mrpack` from
+[releases](https://github.com/cinderworks-mc/the-foundry-pack/releases) or the
+[pack page](https://cinderworks.dev/foundry/pack/), then in your launcher: add
+instance, from file, pick the `.mrpack`. you will be re-importing by hand every
+update, which is why this is the backup route.
+
+either way, join `modded.cinderworks.dev` - it is already in your server list.
 
 ## what is in here
 
