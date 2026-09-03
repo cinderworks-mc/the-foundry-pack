@@ -29,3 +29,7 @@ gh release create "$v" "$mrpack" \
   --repo cinderworks-mc/the-foundry-pack \
   --title "$v" \
   --notes "changes in CHANGELOG.md. import the .mrpack with the modrinth app."
+
+# NOTE (09-03-2026): forgejo-mirrored github repo - `gh release create` lands a
+# DRAFT because github git is read-only (no tag creation). push the tag first and
+# let it mirror, then create; or `gh release edit <v> --draft=false` after.
