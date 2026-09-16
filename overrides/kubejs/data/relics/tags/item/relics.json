@@ -1,0 +1,173 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "reliquified_ars_nouveau:cloak_of_concealment",
+      "required": false
+    },
+    {
+      "id": "reliquified_ars_nouveau:flaming_bracer",
+      "required": false
+    },
+    {
+      "id": "reliquified_ars_nouveau:staff_of_the_spectral_walker",
+      "required": false
+    },
+    {
+      "id": "reliquified_ars_nouveau:quantum_bubble",
+      "required": false
+    },
+    {
+      "id": "reliquified_ars_nouveau:emblem_of_defense",
+      "required": false
+    },
+    {
+      "id": "reliquified_ars_nouveau:emblem_of_assault",
+      "required": false
+    },
+    {
+      "id": "reliquified_ars_nouveau:mana_ring",
+      "required": false
+    },
+    {
+      "id": "reliquified_ars_nouveau:archmage_glove",
+      "required": false
+    },
+    {
+      "id": "reliquified_ars_nouveau:whirlisprig_petals",
+      "required": false
+    },
+    {
+      "id": "reliquified_ars_nouveau:spiked_cloak",
+      "required": false
+    },
+    {
+      "id": "reliquified_ars_nouveau:horn_of_the_wild_hunter",
+      "required": false
+    },
+    {
+      "id": "reliquified_ars_nouveau:wing_of_the_wild_stalker",
+      "required": false
+    },
+    {
+      "id": "reliquified_ars_nouveau:whirling_broom",
+      "required": false
+    },
+    {
+      "id": "reliquified_ars_nouveau:ring_of_thrift",
+      "required": false
+    },
+    {
+      "id": "reliquified_ars_nouveau:ballistarian_bracer",
+      "required": false
+    },
+    {
+      "id": "reliquified_ars_nouveau:ring_of_last_will",
+      "required": false
+    },
+    {
+      "id": "reliquified_ars_nouveau:illusionists_mantle",
+      "required": false
+    },
+    {
+      "id": "reliquified_ars_nouveau:architects_staff",
+      "required": false
+    },
+    {
+      "id": "reliquified_ars_nouveau:emblem_of_devotion",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:cardiac_trap",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:cloak_of_the_bloody_feather",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:dimension_key",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:dragon_blood_vial",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:echo_glove",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:ender_bow",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:galaxy_devourer_diadem",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:flask_of_the_red_mist",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:hat_of_omniscience",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:immaterial_disperser",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:living_flesh",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:lunar_sextant",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:mirror_of_transgression",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:mask_of_hunger",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:pulsar_mantle",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:ring_of_blades",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:ring_of_elusiveness",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:sealed_claymore",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:sealed_rapier",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:sealed_sword",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:shadow_claws",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:sinner_crown",
+      "required": false
+    },
+    {
+      "id": "reliquified_irons_spells_and_spellbooks:slicer",
+      "required": false
+    }
+  ]
+}

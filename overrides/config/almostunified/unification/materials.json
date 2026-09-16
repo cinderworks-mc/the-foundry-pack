@@ -8,7 +8,9 @@
     "ae2",
     "ars_nouveau",
     "forbidden_arcanus",
-    "apotheosis"
+    "apotheosis",
+    "createcasing",
+    "createdeco"
   ],
   "priority_overrides": {},
   "stone_variants": [
@@ -36,11 +38,17 @@
     "c:sheets/{material}"
   ],
   "ignored_tags": [],
-  "ignored_items": [],
+  "ignored_items": [
+    "forbidden_arcanus:stella_arcanum",
+    "createaddition:copper_wire"
+  ],
   "ignored_recipe_types": [
     "cucumber:shaped_tag"
   ],
-  "ignored_recipe_ids": [],
+  "ignored_recipe_ids": [
+    "cataclysm_spellbooks:engineers_power_glove",
+    "create_things_and_misc:copper_scaffolding_craft"
+  ],
   "recipe_viewer_hiding": true,
   "loot_unification": false,
   "ignored_loot_tables": []

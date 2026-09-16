@@ -1,0 +1,14 @@
+{
+  "values": {
+    "create:potato_cannon": "apotheosis:bow",
+    "tfmg:advanced_potato_cannon": "apotheosis:bow",
+    "tfmg:quad_potato_cannon": "apotheosis:bow",
+    "tfmg:flamethrower": "apotheosis:bow",
+
+    "create:cardboard_sword": "apotheosis:melee_weapon",
+    "ars_nouveau:enchanters_sword": "apotheosis:melee_weapon",
+    "ars_nouveau:spell_bow": "apotheosis:bow",
+    "ars_nouveau:spell_crossbow": "apotheosis:bow",
+    "ars_nouveau:enchanters_shield": "apotheosis:shield"
+  }
+}

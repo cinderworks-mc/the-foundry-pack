@@ -1,0 +1,95 @@
+{
+    "type": "apotheosis:elite",
+    "affix_data": {
+        "affix_chance": 0.3
+    },
+    "basic_data": {
+        "constraints": {
+            "dimensions": [
+                "minecraft:overworld"
+            ]
+        },
+        "name": "The Line Conductor",
+        "spawn_conditions": [
+            {
+                "type": "apotheosis:not",
+                "spawn_condition": {
+                    "type": "apotheosis:spawn_type",
+                    "spawn_types": [
+                        "spawn_egg",
+                        "spawner",
+                        "mob_summoned"
+                    ]
+                }
+            },
+            {
+                "type": "apotheosis:surface_type",
+                "surface_type": "needs_surface"
+            }
+        ],
+        "valid_gear_sets": {
+            "frontier": [
+                "#foundry_gear"
+            ],
+            "ascent": [
+                "#foundry_gear"
+            ],
+            "summit": [
+                "#foundry_gear"
+            ],
+            "pinnacle": [
+                "#foundry_gear"
+            ]
+        },
+        "weights": {
+            "frontier": {
+                "quality": 0.1,
+                "weight": 100
+            },
+            "ascent": {
+                "quality": 0.1,
+                "weight": 100
+            },
+            "summit": {
+                "quality": 0.1,
+                "weight": 100
+            },
+            "pinnacle": {
+                "quality": 0.1,
+                "weight": 100
+            }
+        }
+    },
+    "entities": "minecraft:vindicator",
+    "stats": {
+        "attribute_modifiers": [
+            {
+                "attribute": "minecraft:generic.max_health",
+                "operation": "add_value",
+                "value": {
+                    "min": 20.0,
+                    "max": 40.0
+                }
+            },
+            {
+                "attribute": "minecraft:generic.attack_damage",
+                "operation": "add_multiplied_total",
+                "value": {
+                    "min": 0.3,
+                    "max": 0.5
+                }
+            },
+            {
+                "attribute": "minecraft:generic.knockback_resistance",
+                "operation": "add_value",
+                "value": 0.5
+            }
+        ],
+        "enchant_chance": 0.25,
+        "enchantment_levels": {
+            "primary": 20,
+            "secondary": 12
+        }
+    },
+    "success_chance": 0.008
+}

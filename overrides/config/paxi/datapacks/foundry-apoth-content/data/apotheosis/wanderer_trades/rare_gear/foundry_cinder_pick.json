@@ -1,0 +1,67 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "apothic_enchanting"
+        }
+    ],
+    "type": "apotheosis:tiered_trade",
+    "trades": {
+        "summit": {
+            "type": "placebo:basic_trade",
+            "input_1": {
+                "count": 1,
+                "id": "minecraft:diamond_pickaxe"
+            },
+            "input_2": {
+                "count": 45,
+                "id": "minecraft:emerald"
+            },
+            "output": {
+                "components": {
+                    "minecraft:custom_name": "{\"text\":\"The Cinder Pick\",\"italic\":false,\"color\":\"#D97706\"}",
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "apothic_enchanting:miners_fervor": 3,
+                            "minecraft:fortune": 3,
+                            "minecraft:mending": 1,
+                            "minecraft:unbreaking": 5
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "minecraft:diamond_pickaxe"
+            },
+            "rare": true,
+            "xp": 500
+        },
+        "pinnacle": {
+            "type": "placebo:basic_trade",
+            "input_1": {
+                "count": 1,
+                "id": "minecraft:diamond_pickaxe"
+            },
+            "input_2": {
+                "count": 45,
+                "id": "minecraft:emerald"
+            },
+            "output": {
+                "components": {
+                    "minecraft:custom_name": "{\"text\":\"The Cinder Pick\",\"italic\":false,\"color\":\"#D97706\"}",
+                    "minecraft:enchantments": {
+                        "levels": {
+                            "apothic_enchanting:miners_fervor": 3,
+                            "minecraft:fortune": 3,
+                            "minecraft:mending": 1,
+                            "minecraft:unbreaking": 5
+                        }
+                    }
+                },
+                "count": 1,
+                "id": "minecraft:diamond_pickaxe"
+            },
+            "rare": true,
+            "xp": 500
+        }
+    }
+}

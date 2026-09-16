@@ -1,0 +1,6 @@
+#shipped by the pack: the ME bridge is OFF on purpose. its item-storage calls crash the server
+#(unguarded ae2things references, 08-30-2026). the rest of advanced peripherals is untouched;
+#the mod back-fills every other key with its defaults on first load.
+[Peripherals]
+	[Peripherals.ME_Bridge]
+		enableMeBridge = false
