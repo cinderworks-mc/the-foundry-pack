@@ -7,6 +7,19 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 0.2.9 (09-14-2026)
+
+### added mods
+- emi, observable, gateways to eternity; 34 mod bumps rode along
+
+### added features
+- apotheosis 8.8: foundry invaders (draugr, ironclad), the Line Conductor elite, ironworks gear, breach + frontier gateways, Case Hardened enchant
+- patchouli field manual (workshop / expeditions / magic), handed to you on first join alongside the welcome book
+
+### config changes
+- mechanical extruder: dropped the height (Y) restrictions on stone recipes, and the overworld netherrack recipe no longer eats its lava
+- misc config + presence fixes
+
 ## 0.2.8 (09-04-2026)
 
 ### added mods
