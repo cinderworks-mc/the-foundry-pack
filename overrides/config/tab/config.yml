@@ -24,7 +24,7 @@ header-footer:
       footer:
         - ""
         - "<#7a6a55>/help has everything else"
-        - "<#7a6a55>modded.hartforge.dev"
+        - "<#7a6a55>modded.cinderworks.dev"
 
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Tablist-name-formatting
 tablist-name-formatting:

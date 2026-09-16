@@ -1,8 +1,55 @@
 # the foundry - changelog
 
-what changed in the pack, newest first. one `##` heading per version, and every
-non-blank line under it is one bullet on the download page - so keep a bullet on
-a single line, no wrapping and no markdown, the page escapes it verbatim.
+what changed in the pack, newest first. house format (notes/changelog-style.md):
+one `##` heading per version, `###` category sections inside it (added mods /
+removed mods / added features / removed features / config changes / heads up,
+only the non-empty ones), one bullet per line, no wrapping. the download page's
+3-line summary is the first added mods / added features bullets. entries older
+than 0.2.8 predate the format and stay as written.
+
+## 0.2.8 (09-04-2026)
+
+### added mods
+- tom's storage: a simple, high-capacity storage network. terminal blocks read your chests directly, no cables or channels to place.
+- create contraption terminals: put a tom's storage terminal on a moving create contraption and it keeps working.
+- functional storage: cheap, tiered storage drawers and crates for stacking bulk items.
+- findme: search for an item across the chests near you and the matches get highlighted. no new blocks.
+- emojiful: type an emoji shortcode in chat, like :ok_hand:, and it renders as an emoji.
+- perception: immersive visual effects, screen shake and particle trails and hit feel. client side only.
+- trashslot: a trash slot in every inventory screen. drag junk onto it, press t to hide it.
+- minemath: a calculator window in game, client side, find it in the controls if you want a key for it.
+- reliquified-artifacts: relics built out of artifacts items, so you keep one curios pile instead of two.
+- ars-energistique: ars nouveau source can flow into an ae2 system now, a source jar or relay into a network line.
+- advanced peripherals: cc:tweaked computers get more peripherals to read and write. the ae2 bridge peripheral is off, it crashed the server on test, everything else works.
+- toms peripherals: more cc:tweaked peripherals, printers and databases among them.
+- cc-redstone-link-bridge: cc:tweaked computers can read and write create's redstone link channels now.
+- ae2 import export card: filter items and fluids in and out of your ae2 system by pattern instead of wiring up one interface per item.
+- me requester: pull items and fluids out of an ae2 system straight into your inventory or an ender chest.
+- apothic tooltip cleanup: apotheosis affix and gem tooltips are one line each instead of a wall of text. client side, toggle it back in the mod's own config if you liked the old look.
+- create integrated farming: create can plant and harvest crops now, contraption pieces included.
+- cataclysm tools and cataclysm weaponery: full tool and weapon sets out of the boss materials, cursium and ignitium.
+
+### updated mods
+- routine bumps swept in: create-bits-n-bobs, waystones, modernfix, azimuth-api, fusion, spell engine, lambdynamiclights, reconnectible chains, me requester - all bugfix or translation releases.
+
+### added features
+- /calc does stack math in chat, /parked tells you who is around and who is parked, /bosses reads the server's boss ledger.
+- new apotheosis content: the Foundry Draugr and Ironclad invaders, The Line Conductor elite, the Foundry Line Sentinel gateway, a lineworker spawner, the Cinder Pick trade, the Case Hardened enchant, and the Ironworks Vein gem.
+- apotheosis affixes now reach ars nouveau's enchanter's sword, bow, crossbow and shield, and create's cardboard sword.
+- generated names picked up foundry words: create, ae2 and ars gear roll material-flavored prefixes, and bosses can come out Rotation-Forged or titled The Line Foreman.
+- the mechanical extruder learned rich soil, sky stone, gem dust and the four create orestones. the old orestone recipes are gone.
+- the sifter learned new tricks: apoth gem dust off crushed netherrack at low odds, a whole Ironworks Vein gem at very low odds, and the extruder's orestones mill into gravel and sift onward, worse odds than mining the real thing.
+
+### config changes
+- apotheosis feels less grindy: augmenting costs less xp, enchantments explain themselves in tooltips, boss alerts reach farther and rogue spawners more often have valuable chests.
+- iron's spells bosses roll less often against the rest of the apotheosis invader pool.
+- veinminer only chains matching blocks now, not everything in a group. obsidian joins the list.
+- distant horizons now starts off. it was eating frames on weaker pcs. options, distant horizons, enable rendering turns it back on.
+- budding amethyst drops to a black-steel pickaxe.
+
+### heads up
+- re-import the pack.
+- the foundry's address is modded.cinderworks.dev now. the welcome book, tab list and voice chat all point at it, and modded.hartforge.dev keeps working.
 
 ## 0.2.7 (08-30-2026)
 

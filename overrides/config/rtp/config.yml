@@ -76,8 +76,8 @@ defaults:
   shape:
     name: "CIRCLE"
     mode: "ACCUMULATE"
-    radius: 625
-    centerRadius: 32
+    radius: 290
+    centerRadius: 16
     centerX: 0
     centerZ: 0
     weight: 1.0
@@ -93,11 +93,11 @@ defaults:
     direction: 2
     requireSkyLight: true
   # How many safe spots to pre-calculate.
-  cacheCap: 50
+  cacheCap: 20
   # Extra unverified spots kept ready. 0 = off.
-  backlogCacheCap: 1000
+  backlogCacheCap: 100
   # Max chunks kept loaded for instant teleports.
-  activeChunkCap: 10
+  activeChunkCap: 5
   # Bad-spot tracking precision (1-5).
   spatialResolution: 3
   # Whether regions/worlds need permission.
@@ -105,3 +105,6 @@ defaults:
 
 # DO NOT TOUCH VERSION NUMBER
 version: 3.1
+# 08-30 audit follow-up: radius clamped to 290 chunks (4640 blocks) so rtp stays inside the
+# pregenerated r5000 area and never generates fresh chunks; cache caps lowered after the
+# post-fix heap/tps regression (87% heap, tps 17). see foundry-audit-plan.md addendum.

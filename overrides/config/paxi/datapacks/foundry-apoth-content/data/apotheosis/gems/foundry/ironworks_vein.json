@@ -1,0 +1,54 @@
+{
+    "type": "apotheosis:gem",
+    "constraints": {
+        "dimensions": [
+            "minecraft:overworld"
+        ]
+    },
+    "min_purity": "flawed",
+    "unique": true,
+    "weights": {
+        "frontier": {
+            "quality": 2.0,
+            "weight": 50
+        },
+        "ascent": {
+            "quality": 2.0,
+            "weight": 50
+        },
+        "summit": {
+            "quality": 2.0,
+            "weight": 50
+        },
+        "pinnacle": {
+            "quality": 2.0,
+            "weight": 50
+        }
+    },
+    "bonuses": [
+        {
+            "type": "apotheosis:drop_transform",
+            "conditions": [
+                {
+                    "condition": "apotheosis:matches_block",
+                    "valid_blocks": "#c:ores/zinc"
+                }
+            ],
+            "desc": "gem.apotheosis:foundry/ironworks_vein.bonus.pickaxe",
+            "gem_class": "apotheosis:breaker",
+            "inputs": {
+                "tag": "c:raw_materials/zinc"
+            },
+            "output": {
+                "count": 1,
+                "id": "minecraft:raw_copper"
+            },
+            "values": {
+                "flawed": 0.1,
+                "normal": 0.15,
+                "flawless": 0.2,
+                "perfect": 0.3
+            }
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+  "__comment": "d20 second half, 08-30: reinforced deepslate drops itself ONLY to the boss pickaxes (infernal_forge = netherite monstrosity drop, void_forge = its upgrade; both are '(this is a pickaxe)' items per the lang). vanilla drops nothing here, purely additive, same shape as budding_amethyst.json. ids verified against cataclysm 3.33 lang 08-30.",
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "cataclysm:infernal_forge",
+              "cataclysm:void_forge"
+            ]
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:reinforced_deepslate"
+        }
+      ]
+    }
+  ]
+}

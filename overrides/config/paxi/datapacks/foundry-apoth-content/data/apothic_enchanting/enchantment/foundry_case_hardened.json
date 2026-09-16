@@ -1,0 +1,60 @@
+{
+    "anvil_cost": 5,
+    "description": {
+        "translate": "enchantment.apothic_enchanting.foundry_case_hardened"
+    },
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "affected": "attacker",
+                "effect": {
+                    "type": "minecraft:apply_mob_effect",
+                    "max_amplifier": {
+                        "type": "minecraft:clamped",
+                        "max": 3.0,
+                        "min": 0.0,
+                        "value": {
+                            "type": "minecraft:linear",
+                            "base": 0.0,
+                            "per_level_above_first": 1.0
+                        }
+                    },
+                    "max_duration": 15.0,
+                    "min_amplifier": 0.0,
+                    "min_duration": 8.0,
+                    "to_apply": "minecraft:mining_fatigue"
+                },
+                "enchanted": "victim",
+                "requirements": {
+                    "chance": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 0.4,
+                            "per_level_above_first": 0.3
+                        }
+                    },
+                    "condition": "minecraft:random_chance"
+                }
+            }
+        ]
+    },
+    "exclusive_set": [
+        "minecraft:thorns",
+        "apothic_enchanting:icy_thorns"
+    ],
+    "max_cost": {
+        "base": 200,
+        "per_level_above_first": 0
+    },
+    "max_level": 3,
+    "min_cost": {
+        "base": 35,
+        "per_level_above_first": 20
+    },
+    "slots": [
+        "chest"
+    ],
+    "supported_items": "#minecraft:enchantable/chest_armor",
+    "weight": 2
+}
