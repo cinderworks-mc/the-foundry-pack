@@ -1,0 +1,12 @@
+{
+  "name": "3. brass and the fun begins",
+  "icon": "create:brass_ingot",
+  "category": "patchouli:workshop",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "text",
+      "text": "look up brass in jei and work backward through what it needs. this is a good time to make room for the next few machines.$(br2)brass opens up mechanical crafters and better ways to sort and move items. give those parts a job: build an ore-processing line that finishes with ingots in a chest. test a small batch through each step before you connect the whole line."
+    }
+  ]
+}

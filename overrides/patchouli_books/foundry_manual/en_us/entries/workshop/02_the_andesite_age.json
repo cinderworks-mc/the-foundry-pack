@@ -1,0 +1,12 @@
+{
+  "name": "2. the andesite age",
+  "icon": "createcobblestone:mechanical_generator",
+  "category": "patchouli:workshop",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "next: stone that arrives without you. look up the mechanical generator in jei - it breaks cobblestone forever, and its ponder scene shows the hookup.$(br2)give the output somewhere to go before you leave it running. then look at what your andesite recipe needs and build toward that. cogs and belts as required.$(br2)a working machine in an ugly shed still counts."
+    }
+  ]
+}

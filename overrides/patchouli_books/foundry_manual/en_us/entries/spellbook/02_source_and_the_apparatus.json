@@ -1,0 +1,12 @@
+{
+  "name": "2. source and the apparatus",
+  "icon": "ars_nouveau:enchanting_apparatus",
+  "category": "patchouli:spellbook",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "use the notebook to set up a sourcelink and a source jar. pick a source method that fits something you're already doing around your base.$(br2)then follow the enchanting apparatus setup. check the recipe before you load the pedestals, including whether it needs source.$(br2)learn another glyph. make a spell for a job you keep doing by hand."
+    }
+  ]
+}

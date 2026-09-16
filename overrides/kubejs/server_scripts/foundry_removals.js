@@ -69,3 +69,12 @@ ServerEvents.recipes(event => {
     event.remove({ id: id })
   })
 })
+
+// 09-08: extendedae infinity cells removed by patrick's ruling - a 16k-tier ae2
+// investment bought a permanent unlimited cobblestone/water tap, deleting
+// create-cobblestone's whole mid-game niche. items stay registered (can't
+// deregister from kubejs), the recipes go.
+ServerEvents.recipes(event => {
+  event.remove({ output: 'extendedae:infinity_cobblestone_cell' })
+  event.remove({ output: 'extendedae:infinity_water_cell' })
+})

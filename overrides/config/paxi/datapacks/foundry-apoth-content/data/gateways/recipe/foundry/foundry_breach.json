@@ -1,0 +1,26 @@
+{
+    "type": "gateways:gate_recipe",
+    "group": "gateways",
+    "pattern": [
+        "BAB",
+        "IPI",
+        "BAB"
+    ],
+    "key": {
+        "B": { "tag": "c:ingots/brass" },
+        "A": { "item": "create:andesite_alloy" },
+        "I": { "tag": "c:ingots/iron" },
+        "P": { "item": "create:precision_mechanism" }
+    },
+    "result": {
+        "id": "gateways:gate_pearl",
+        "count": 1,
+        "components": {
+            "minecraft:custom_name": { "text": "Foundry Breach Pearl", "italic": false, "color": "#B45309" },
+            "minecraft:lore": [
+                { "text": "cracks the line between here and somewhere worse", "italic": true, "color": "gray" }
+            ]
+        }
+    },
+    "gateway": "gateways:foundry/foundry_breach"
+}
