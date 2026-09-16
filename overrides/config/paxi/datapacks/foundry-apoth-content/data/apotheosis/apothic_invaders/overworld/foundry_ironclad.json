@@ -12,16 +12,20 @@
         "name": "use_name_generation",
         "valid_gear_sets": {
             "frontier": [
-                "#foundry_gear"
+                "#foundry_gear",
+                "#frontier_melee"
             ],
             "ascent": [
-                "#foundry_gear"
+                "#foundry_gear",
+                "#ascent_melee"
             ],
             "summit": [
-                "#foundry_gear"
+                "#foundry_gear",
+                "#summit_melee"
             ],
             "pinnacle": [
-                "#foundry_gear"
+                "#foundry_gear",
+                "#pinnacle_melee"
             ]
         },
         "weights": {

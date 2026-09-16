@@ -30,5 +30,7 @@ ServerEvents.tick(event => {
   if (asleep * 2 < humans) return
 
   event.server.runCommandSilent('time set day')
-  event.server.runCommandSilent('tellraw @a {"text":"enough of you are asleep. dawn comes early","color":"gray","italic":true}')
+  // actionbar, not tellraw - the hearth's twin is chat-silent by design and
+  // the two announce with the same medium + wording
+  event.server.runCommandSilent('title @a actionbar {"text":"enough of you are asleep. dawn comes early","color":"gray","italic":true}')
 })

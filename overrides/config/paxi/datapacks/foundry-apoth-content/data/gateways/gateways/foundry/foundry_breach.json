@@ -1,0 +1,197 @@
+{
+    "size": "medium",
+    "color": "#B45309",
+    "spawn_algorithm": "gateways:inward_spiral",
+    "rules": {
+        "lives": 2,
+        "requires_nearby_player": true,
+        "spacing": 24,
+        "spawn_range": 10,
+        "leash_range": 32
+    },
+    "waves": [
+        {
+            "max_wave_time": 2400,
+            "setup_time": 100,
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:zombie",
+                    "count": 4,
+                    "desc": "wave_entity.foundry.line_crew",
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "apotheosis:foundry/ironworks"
+                        },
+                        {
+                            "type": "apotheosis:affix",
+                            "affix_chance": 0.5
+                        }
+                    ]
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:experience",
+                    "experience": 200,
+                    "orb_size": 15
+                },
+                {
+                    "type": "gateways:stack",
+                    "stack": { "id": "minecraft:iron_ingot", "count": 16 }
+                }
+            ]
+        },
+        {
+            "max_wave_time": 3000,
+            "setup_time": 160,
+            "entities": [
+                {
+                    "type": "apotheosis:invader",
+                    "invader": "apotheosis:overworld/foundry_ironclad",
+                    "count": 1
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:skeleton",
+                    "count": 2,
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "apotheosis:frontier/ranged/chain"
+                        },
+                        {
+                            "type": "apotheosis:affix",
+                            "affix_chance": 0.75
+                        }
+                    ]
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:experience",
+                    "experience": 400,
+                    "orb_size": 20
+                }
+            ]
+        },
+        {
+            "max_wave_time": 3200,
+            "setup_time": 160,
+            "entities": [
+                {
+                    "type": "apotheosis:invader",
+                    "invader": "apotheosis:overworld/foundry_draugr",
+                    "count": 2
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:zombie",
+                    "count": 2,
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "apotheosis:frontier/iron"
+                        },
+                        {
+                            "type": "apotheosis:affix",
+                            "affix_chance": 0.75
+                        }
+                    ]
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.25
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.2
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:experience",
+                    "experience": 600,
+                    "orb_size": 25
+                },
+                {
+                    "type": "gateways:stack",
+                    "stack": { "id": "apotheosis:gem_dust", "count": 8 }
+                }
+            ]
+        },
+        {
+            "max_wave_time": 4000,
+            "setup_time": 200,
+            "entities": [
+                {
+                    "type": "apotheosis:elite",
+                    "elite": "apotheosis:overworld/foundry_conductor",
+                    "desc": "wave_entity.foundry.line_conductor_boss",
+                    "base_entity": {
+                        "type": "gateways:standard",
+                        "entity": "minecraft:vindicator",
+                        "count": 1,
+                        "finalize_spawn": false
+                    }
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:zombie",
+                    "count": 2,
+                    "finalize_spawn": false,
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "apotheosis:foundry/ironworks"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "rewards": [
+        {
+            "type": "gateways:counted",
+            "count": 1,
+            "reward": {
+                "type": "apotheosis:affix_item",
+                "rarities": ["apotheosis:rare"]
+            }
+        },
+        {
+            "type": "gateways:counted",
+            "count": 1,
+            "reward": {
+                "type": "apotheosis:gem",
+                "purities": ["flawed", "normal"]
+            }
+        },
+        {
+            "type": "gateways:stack",
+            "stack": { "id": "apotheosis:sigil_of_socketing", "count": 1 }
+        },
+        {
+            "type": "gateways:stack",
+            "stack": { "id": "apotheosis:timeworn_fabric", "count": 40 }
+        }
+    ]
+}

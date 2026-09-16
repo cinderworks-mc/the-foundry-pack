@@ -1,0 +1,6 @@
+{
+  "name": "the foundry field manual",
+  "landing_text": "there's a lot in this pack. you don't need to learn all of it before you start.$(br2)this book gives you three places to begin. each path starts small and works toward something you can use. switch paths whenever you like.$(br2)recipes live in jei, the item browser beside your inventory. search for an item there to see how to make it. for create machines, hover over the item in your inventory or jei and hold W if it offers a ponder scene. they're good scenes.",
+  "version": "1",
+  "show_progress": false
+}

@@ -1,0 +1,12 @@
+{
+  "name": "4. build a sifter",
+  "icon": "createsifter:sifter",
+  "category": "patchouli:workshop",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "text",
+      "text": "the sifter processes gravel for materials like metals, lapis, and amethyst. check jei for the drops each mesh can find - brass and up find more. mill your generator's cobblestone into gravel and the supply line feeds itself.$(br2)leave room for storage. you'll want it running while you're elsewhere.$(br2)once it works unattended, you can call the shed \"the works.\""
+    }
+  ]
+}

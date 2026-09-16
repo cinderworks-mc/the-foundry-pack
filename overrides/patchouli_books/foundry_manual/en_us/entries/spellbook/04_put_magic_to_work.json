@@ -1,0 +1,12 @@
+{
+  "name": "4. put magic to work",
+  "icon": "ars_creo:starbuncle_wheel",
+  "category": "patchouli:spellbook",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "text",
+      "text": "ars creo connects ars nouveau with create. look through its entries and recipes for ways to use magic in your workshop.$(br2)start with one job: power a small machine with a starbuncle, or work toward a contraption that casts a spell. get that part working on its own before attaching it to the rest of the factory."
+    }
+  ]
+}

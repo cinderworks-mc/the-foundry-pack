@@ -1,0 +1,16 @@
+{
+  "name": "2. where to go",
+  "icon": "lootr:lootr_chest",
+  "category": "patchouli:expedition",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "start with a nearby dungeon. bring a shield, watch the spawners, and leave yourself a clear route out.$(br2)lootr chests give each player their own loot. if you're exploring with friends, everyone opens everything - nobody can ninja your roll."
+    },
+    {
+      "type": "text",
+      "text": "watch for apotheosis gear with extra modifiers, and read what those modifiers do. head home when you've found something worth keeping. the dungeon will still be there."
+    }
+  ]
+}

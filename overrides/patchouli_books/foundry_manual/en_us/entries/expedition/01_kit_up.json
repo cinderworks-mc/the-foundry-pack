@@ -1,0 +1,16 @@
+{
+  "name": "1. kit up",
+  "icon": "tombstone:abandoned_grave",
+  "category": "patchouli:expedition",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "text",
+      "text": "bring food, spare tools, blocks, and a way to see in the dark. eat a variety of foods as you find them - spice of life turns variety into extra hearts.$(br2)waystone travel is free on this server. activate one near home and others as you explore."
+    },
+    {
+      "type": "text",
+      "text": "if you die, corail tombstone leaves a grave holding your items, and it waits forever - no decay, no timer. some of your xp doesn't make the trip. getting back to the grave is still your problem."
+    }
+  ]
+}

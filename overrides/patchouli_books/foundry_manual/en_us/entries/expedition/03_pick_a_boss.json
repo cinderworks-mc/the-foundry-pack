@@ -1,0 +1,16 @@
+{
+  "name": "3. pick a boss",
+  "icon": "cataclysm:the_harbinger_spawn_egg",
+  "category": "patchouli:expedition",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "text",
+      "text": "when ordinary dungeons feel manageable, the harbinger is the usual first cataclysm boss - its ruined citadel shows up on the xaero world map as you explore. read up on how the fight starts before you knock.$(br2)bring your best gear, useful spells, and enough supplies for a longer fight. set a meeting point outside the structure if you're going with friends."
+    },
+    {
+      "type": "text",
+      "text": "aim for one dead boss, on purpose, with witnesses."
+    }
+  ]
+}

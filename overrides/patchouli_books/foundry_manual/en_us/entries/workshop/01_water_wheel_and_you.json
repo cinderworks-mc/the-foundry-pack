@@ -1,0 +1,12 @@
+{
+  "name": "1. water wheel and you",
+  "icon": "create:water_wheel",
+  "category": "patchouli:workshop",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "text",
+      "text": "start with andesite alloy. use jei to find the recipes for a water wheel, shafts, and a mechanical press.$(br2)set up the wheel in flowing water, then connect it to the press with shafts. check the press's ponder scene if the layout gives you trouble.$(br2)make your first iron sheet. you now have the beginning of a workshop."
+    }
+  ]
+}

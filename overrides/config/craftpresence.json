@@ -1,0 +1,38 @@
+{
+  "_schemaVersion": 7,
+  "_lastMCVersionId": 767,
+  "generalSettings": {
+    "clientId": "1547669696340557974",
+    "detectModrinthPack": true
+  },
+  "displaySettings": {
+    "presenceData": {
+      "enabled": true,
+      "appName": "Cinder Works",
+      "details": "The Foundry",
+      "gameState": "{getFirst(dimension.message, menu.message)}",
+      "startTimestamp": "{data.general.time}",
+      "largeImageKey": "foundry",
+      "smallImageKey": "",
+      "largeImageText": "Cinder Works - The Foundry",
+      "smallImageText": "{player.name}"
+    }
+  },
+  "serverSettings": {
+    "serverData": {
+      "modded.cinderworks.dev": {
+        "data": {
+          "enabled": true,
+          "useAsMain": true,
+          "appName": "Cinder Works",
+          "details": "The Foundry",
+          "gameState": "{dimension.message}",
+          "startTimestamp": "{data.general.time}",
+          "largeImageKey": "foundry",
+          "smallImageKey": "",
+          "largeImageText": "Cinder Works - The Foundry"
+        }
+      }
+    }
+  }
+}

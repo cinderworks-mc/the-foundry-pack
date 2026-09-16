@@ -1,0 +1,12 @@
+{
+  "name": "3. the other magic",
+  "icon": "irons_spellbooks:scroll",
+  "category": "patchouli:spellbook",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "text",
+      "text": "iron's spells 'n spellbooks mostly comes to you as loot - scrolls and spellbooks out in dungeons and ruins. bring them home and check their uses in jei.$(br2)try a new spell somewhere quiet before taking it into a dungeon. check its range, mana cost, and cooldown so you know what you're carrying.$(br2)you can use both magic systems. there's no paperwork."
+    }
+  ]
+}

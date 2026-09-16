@@ -20,7 +20,7 @@ ServerEvents.recipes(function (event) {
     .catalyst('ae2:smooth_sky_stone_block')
     .advanced(true)
     .consumeBlocks([false, true])
-    .requirements([RecipeRequirement.maxY(-20), RecipeRequirement.minSpeed(32.0), RecipeRequirement.maxSpeed(64.0)])
+    .requirements([RecipeRequirement.minSpeed(32.0), RecipeRequirement.maxSpeed(64.0)])
     .id('foundry:extruding/sky_stone')
 
   // gem dust: lava + amethyst block over calcite, ~1 in 2 every 4 presses. amethyst sink for sockets.
@@ -29,6 +29,34 @@ ServerEvents.recipes(function (event) {
     .catalyst('minecraft:calcite')
     .requiredBonks(4)
     .id('foundry:extruding/gem_dust')
+
+  // height caps dropped pack-wide 09-14 ("feels like an odd restriction"). the mod gates its
+  // water+lava stones by y band (deepslate y<=0, andesite/diorite/granite y 0-60); we readd
+  // them bandless. overlap is fine - cobblestone already matches everywhere with no reqs and
+  // the extruder disambiguates multi-match. speed caps kept, rest identical. our sky stone
+  // recipe above lost its maxY(-20) the same day, rpm band kept.
+  event.remove({ id: 'create_mechanical_extruder:extruding/deepslate' })
+  X.extruding(Item.of('minecraft:deepslate'),
+    [BlockPredicate.of('minecraft:water'), BlockPredicate.of('minecraft:lava')])
+    .requirements([RecipeRequirement.maxSpeed(16.0)])
+    .id('foundry:extruding/deepslate')
+  // advanced netherrack: the mod's overworld route (brass + netherrack catalyst) eats its lava
+  // every press. patrick 09-14: needing the brass extruder IS the balance, drop the lava tax.
+  // the free non-advanced recipe stays nether-only (biome req untouched).
+  event.remove({ id: 'create_mechanical_extruder:extruding/advanced_netherrack' })
+  X.extruding(Item.of('minecraft:netherrack'),
+    [BlockPredicate.of('minecraft:blue_ice'), BlockPredicate.of('minecraft:lava')])
+    .catalyst('minecraft:netherrack')
+    .advanced(true)
+    .id('foundry:extruding/advanced_netherrack')
+
+  var stones = ['andesite', 'diorite', 'granite']
+  for (var s = 0; s < stones.length; s++) {
+    event.remove({ id: 'create_mechanical_extruder:extruding/' + stones[s] })
+    X.extruding(Item.of('minecraft:' + stones[s]),
+      [BlockPredicate.of('minecraft:water'), BlockPredicate.of('minecraft:lava')])
+      .id('foundry:extruding/' + stones[s])
+  }
 
   // orestones: lava + water over a block of the same orestone makes more of it, cobble-gen style.
   // the mod's own versions (lapis/iron/gold/prismarine blocks + lava) come out so ours is the only path.

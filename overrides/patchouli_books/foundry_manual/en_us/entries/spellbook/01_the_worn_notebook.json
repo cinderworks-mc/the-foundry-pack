@@ -1,0 +1,12 @@
+{
+  "name": "1. the worn notebook",
+  "icon": "ars_nouveau:worn_notebook",
+  "category": "patchouli:spellbook",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "text",
+      "text": "open the worn notebook you spawned with. it's your guide to ars nouveau, and the place to look when this book skips a detail.$(br2)find the novice spellbook recipe and gather what it needs. start with a simple mining spell: projectile and break. try it on a nearby block - learning the controls is easier when nothing is chasing you."
+    }
+  ]
+}
