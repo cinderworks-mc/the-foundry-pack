@@ -35,4 +35,14 @@ either way, join `modded.cinderworks.dev` - it is already in your server list.
 release, `overrides/` is our configs and kubejs scripts. nothing third party is
 bundled: the launcher fetches every mod from its author's own modrinth upload.
 
+## shipping a release
+
+`tools/publish.sh <version>` does the mechanical part. as of 09-16-2026 this
+repo is github-primary (`origin` is `github.com/cinderworks-mc/the-foundry-pack`
+directly, no forgejo mirror in between) - `git push origin main <tag>` lands
+the tag on github immediately, so `gh release create <tag> <mrpack> -R
+cinderworks-mc/the-foundry-pack` right after works cleanly, no draft dance.
+verify with `gh release view <tag> -R cinderworks-mc/the-foundry-pack --json
+isDraft,assets`: `isDraft` must be `false` and the mrpack must be attached.
+
 more at [cinderworks.dev](https://cinderworks.dev)
