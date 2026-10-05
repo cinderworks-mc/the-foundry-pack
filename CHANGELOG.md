@@ -7,6 +7,15 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 0.2.10 (10-05-2026)
+
+### updated mods
+- routine bumps across the pack: Applied Energistics 2, Ars Nouveau and its Flavors & Delight, the RPG Series (Archers, Jewelry, Paladins & Priests, Rogues & Warriors, Wizards) with Spell Engine, Create and six of its addons, Quark, Supplementaries, Waystones, Lootr, Sable, Eternal Starlight, The Bumblezone, Xaero's Minimap and World Map, and about 35 libraries
+- Distant Horizons 3.3.3, Complementary Shaders (Reimagined and Unbound) r5.9.3, Essential 1.5.0.1, Entity Culling 1.11.2, ImmediatelyFast 1.6.14, Sodium Extra 0.9.4
+
+### config changes
+- back slots: curios gives you 4 now (was 2)
+
 ## 0.2.9 (09-14-2026)
 
 ### added mods
