@@ -7,6 +7,20 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 0.2.11 (10-05-2026)
+
+### added mods
+- Botany Pots: pots that grow crops for you
+- Botany Trees: grow trees in small pots, works with Botany Pots
+- Dark Paintings: a batch of new paintings
+- Farmer's Spell 'n Spell Book: magical cooking recipes and the School of Gluttony, a crossover of Iron's Spells 'n Spellbooks and Farmer's Delight
+- Tempad: open a portal to anywhere from anywhere
+- ComputerCraft Create (resource pack): computercraft textures that fit in with create
+- Create: Applied Energistics 2 (resource pack): applied energistics in the style of create
+- Create Style Sophisticated Storages (resource pack): sophisticated storage, creatified
+- Create Style Sophisticated Backpacks (resource pack): sophisticated backpacks, creatified
+- Tom's Create Storage (resource pack): tom's simple storage in the create style
+
 ## 0.2.10 (10-05-2026)
 
 ### updated mods
