@@ -559,3 +559,21 @@ emojiful | 1.21-5.2.4 | auto   # BETA-tagged -> allow-listed in build_pack.py, n
 
 ## client atmosphere, 09-02-2026 (patrick's pick, folded in from the 0.2.9 queue)
 perception | 0.2.1 | client   # ambient darkness/dread atmosphere effects. modrinth flags client_side=required, server_side=unsupported - real client-only, release build so no ALLOW_BETA needed. requires architectury-api + octolib (shatterbyte-lib), both already present above
+
+## added 10-05-2026 (patrick): botany + decor + spell farming + teleport pad (combat-nouveau tried and removed same day: overlaps better-combat)
+## all five are client=required server=required; their libraries (bookshelf-lib, prickle, puzzles-lib,
+## resourceful-lib/config, kotlin-for-forge) are already pinned above. tempad is beta-only on 1.21.1.
+botany-pots | 21.1.44 | both   # grow crops, trees, flowers in pots; bookshelf-lib + prickle
+botany-trees | 21.1.7 | both   # tree crops for botany pots; requires botany-pots
+dark-paintings | 21.1.7 | both   # extra paintings (same author as botany pots)
+farmers-spell | 1.0.6.0-1.21.1 | both   # farmer's delight spell book (spell-engine route)
+tempad | 3.0.4 | both   # BETA: portable teleport pad; resourceful-lib/config + kotlin-for-forge
+
+## added 10-05-2026 (patrick): create-flavored gui/texture packs. client-only, ship available but NOT in the
+## default enabled order. none of these list 1.21.1 except backpacks (see ALLOW_OLD_MC in build_pack.py), so
+## expect partial coverage: gui textures that moved since 1.20 simply fall back to the default look.
+ccc | 5.0.1 | resourcepack
+create_applied_energistics-2 | 1.0 | resourcepack | file=Create_Applied_Energistics_2.zip
+create-sophisticated-storages | 1.0 | resourcepack
+create-sophisticated-backpacks | 1.2 | resourcepack
+toms-create-storage | 2.1 | resourcepack
