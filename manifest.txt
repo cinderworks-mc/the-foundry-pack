@@ -244,7 +244,7 @@ leafrtp | 3.2.1 | server   # /rtp only. essentialcommands has no rtp of its own
 ## cosmetics & essentials-parity (08-27-2026) - wardrobe/screenshot/multi-account parity with
 ## essentials mod, requested for both the hearth and the foundry. all client-only or optional
 ## server-side per modrinth's own flags; env=auto lets the resolver carry those through.
-entity-model-features | 3.3.11-neoforge-1.21 | auto
+entity-model-features | 3.2.4-neoforge-1.21 | auto   # PINNED BACK 10-07 (0.2.12): 3.3.5+ dropped EMFAnimationEntityContext, which fape_compat 0.5 calls, so the FA+Player addon broke resource loading. 3.2.4 is the last known good
 entitytexturefeatures | 7.2.5-neoforge-1.21 | auto
 cosmetica | 2.0.1-1.21.1-neoforged | auto
 # REMOVED 08-27: broke Patrick's client session on real use. Patrick wants
@@ -577,3 +577,17 @@ create_applied_energistics-2 | 1.0 | resourcepack | file=Create_Applied_Energist
 create-sophisticated-storages | 1.0 | resourcepack
 create-sophisticated-backpacks | 1.2 | resourcepack
 toms-create-storage | 2.1 | resourcepack
+
+## added 10-05-2026 (patrick): cybernetics + its vanity addon. both client=required server=required.
+createcybernetics | 0.5.2-HOTFIX | both
+cybernetics-vanity | 0.5.2 | both
+
+## our own mod (10-07-2026): title screen prompt that walks players through the extras we can't ship in the pack
+github:cinderworks-mc/foundry-additions@v0.2.0/foundryadditions-1.21.1-0.2.0.jar | - | both
+
+## server-only extras (10-07-2026): astral sorcery + its lib, straight from the author's maven.
+## modrinth only takes cdn.modrinth.com / github / gitlab download urls, so these are env server and
+## never enter the client mrpack. clients get them from the foundry-additions in-game extras prompt
+## or the /extras page (cinderworks.dev/foundry/pack/extras/).
+bundle:https://maven.hellfiredev.net/hellfirepvp/astralsorcery/AstralSorcery/2.0.1.32/AstralSorcery-2.0.1.32.jar | 2.0.1.32 | server
+bundle:https://maven.hellfiredev.net/hellfirepvp/observerlib/ObserverLib/1.10.3.31/ObserverLib-1.10.3.31.jar | 1.10.3.31 | server
