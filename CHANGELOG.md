@@ -7,6 +7,14 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 0.2.13 (10-07-2026)
+
+### updated mods
+- Entity Texture Features pinned back to 7.1 so it matches Entity Model Features 3.2.4
+
+### heads up
+- 0.2.12 crashed the game as soon as your hand rendered, so it was pulled. if you installed it, update to 0.2.13
+
 ## 0.2.12 (10-07-2026)
 
 ### added mods

@@ -245,7 +245,7 @@ leafrtp | 3.2.1 | server   # /rtp only. essentialcommands has no rtp of its own
 ## essentials mod, requested for both the hearth and the foundry. all client-only or optional
 ## server-side per modrinth's own flags; env=auto lets the resolver carry those through.
 entity-model-features | 3.2.4-neoforge-1.21 | auto   # PINNED BACK 10-07 (0.2.12): 3.3.5+ dropped EMFAnimationEntityContext, which fape_compat 0.5 calls, so the FA+Player addon broke resource loading. 3.2.4 is the last known good
-entitytexturefeatures | 7.2.5-neoforge-1.21 | auto
+entitytexturefeatures | 7.1-neoforge-1.21 | auto   # PINNED BACK 10-07 (0.2.13) with emf 3.2.4: emf 3.2.4 calls ETFRenderContext.incrementCurrentModelPartDepth, gone in etf 7.2.x, NoSuchMethodError in first person. 7.1 is the pair that shipped 0.2.0-0.2.8
 cosmetica | 2.0.1-1.21.1-neoforged | auto
 # REMOVED 08-27: broke Patrick's client session on real use. Patrick wants
 # Essential's own switcher instead if we add Essential (see notes) - if not,
