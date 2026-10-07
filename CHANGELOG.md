@@ -10,7 +10,7 @@ than 0.2.8 predate the format and stay as written.
 ## 0.2.12 (10-07-2026)
 
 ### added mods
-- Foundry Additions 0.2.0: a title screen prompt that walks you through the extra mods we can't ship in the pack
+- Foundry Additions 0.2.1: a title screen prompt that walks you through the extra mods we can't ship in the pack
 - Cybernetics: install cybernetic parts in your body
 - Cybernetics: Vanity: control how your installed cybernetics look
 - Astral Sorcery + ObserverLib: now on the server. install them from the title screen prompt or the extras page (cinderworks.dev/foundry/pack/extras/), straight from the mod author's own download server
