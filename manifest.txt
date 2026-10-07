@@ -583,7 +583,7 @@ createcybernetics | 0.5.2-HOTFIX | both
 cybernetics-vanity | 0.5.2 | both
 
 ## our own mod (10-07-2026): title screen prompt that walks players through the extras we can't ship in the pack
-github:cinderworks-mc/foundry-additions@v0.2.0/foundryadditions-1.21.1-0.2.0.jar | - | both
+github:cinderworks-mc/foundry-additions@v0.2.1/foundryadditions-1.21.1-0.2.1.jar | - | both
 
 ## server-only extras (10-07-2026): astral sorcery + its lib, straight from the author's maven.
 ## modrinth only takes cdn.modrinth.com / github / gitlab download urls, so these are env server and
