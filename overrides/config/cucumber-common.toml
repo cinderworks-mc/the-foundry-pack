@@ -1,0 +1,8 @@
+# only modTagPriorities is set here, neoforge fills the rest with defaults on first load.
+# mystical agriculture's essence -> ingot recipes are cucumber:shaped_tag, which almostunified skips.
+# cucumber asks almostunified first, and falls back to this list when a tag isn't unified.
+# the default is thermal, mekanism, ... so lead/steel/bronze essence would craft mekanism's copies
+# that AU hides in jei. this mirrors almostunified/unification/materials.json mod_priorities, keep them in sync.
+
+[General]
+	modTagPriorities = ["minecraft", "kubejs", "create", "tfmg", "createbigcannons", "ae2", "ars_nouveau", "forbidden_arcanus", "apotheosis", "createcasing", "createdeco", "createaddition", "mekanism", "enderio", "industrialforegoing"]

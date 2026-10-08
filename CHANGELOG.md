@@ -7,6 +7,103 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 1.0.0 (10-08-2026)
+
+### added mods
+- Draconic Evolution: endgame tech, with its Brandon's Core and CodeChicken Lib libraries and a Sodium rendering fix
+- Mekanism: machines, ore processing, energy and jetpacks
+- Ice and Fire: dragons, dragon gear and mythic creatures
+- Cooking for Blockheads: a kitchen multiblock that shows everything you can cook from the ingredients nearby
+- FTB Teams and FTB Library: teams and parties are back. install both from the title screen prompt or the extras page (cinderworks.dev/foundry/pack/extras/)
+- Just Another Witchery Remake: the old witchcraft mod rebuilt, with cauldron brewing, rituals and a witch's guide book
+- Modonomicon: the guide book library Witchery needs
+- The Twilight Forest: the classic dimension, now on the server. install it from the title screen prompt or the extras page (cinderworks.dev/foundry/pack/extras/)
+- Tropicraft: a tropical island getaway with its own dimension, plants and mobs
+- Occultism: summon spirits that mine, craft and sort for you, with pentacle rituals and familiars
+- JAWR: Forbidden Magic: the soul magic and lichdom half of Witchery
+- Neo Vitae: blood magic, rebuilt for 1.21.1
+- Enhanced Celestials 2: blood moons and harvest moons, rebuilt, with shader support for iris
+- Thaumaturge: a research journal, aura and vis magic, and the Crimson Cult. in as an extra for now, the install prompt grabs it
+- Integrated Dungeons and Structures: big detailed dungeons with loot that speaks create, quark and supplementaries
+- Create: Structures Arise: create-themed structures to find out in the world
+- Deeper and Darker: a whole dimension past the ancient city, with warden-tier gear
+- Mowzie's Mobs: hand-animated bosses and mobs that sit between early game and cataclysm
+- Create: Garnished: nuts and foods your factory makes
+- Brewin' and Chewin': kegs for fermenting drinks, cheese and jams
+- Waystones: Sable: waystones that work on airships
+- Jade Addons: more info in the jade tooltip for create and friends
+- Jade Sable Compat: jade lookups work on airship blocks
+- JEED: every potion effect explains itself in jei
+- Ender IO: conduits and machines (beta)
+- Mystical Agriculture: grow your resources as crops
+- libraries: SmartBrainLib, CorgiLib, Data Anchor and Cucumber
+- The Undergarden: a strange dimension deep underground (beta)
+- Aquamirae: ship graveyards and deep sea bosses for the ocean
+- Goety: necromancy, soul rituals and illager bosses
+- Goety Cataclysm: ties Goety into cataclysm's bosses
+- Handcrafted: furniture you can actually sit and sleep on
+- Amendments: supplementaries' sister mod, with wall lanterns, better lecterns and cauldron mixing
+- Little Joys: dig spots, fishing spots and fallen stars to stumble on
+- Etched: burn your own music discs
+- Sophisticated Storage Create Integration: sophisticated storage works on contraptions, like the backpacks already do
+- Create Stuff 'N Additions x Sable compat: fixes grapplin and floating block crashes on airships
+- Create: Compatible Storage: quark and other modded chests work on contraptions
+- Create: Extra Gauges: logic gauges for the factory gauge network
+- Industrial Foregoing: mob and plant automation machines
+- libraries: Fragmentum and Create: Deployer API
+- Mystical Customization: lets us tune which mystical agriculture crops exist
+- Mystical Agradditions: tier 6 crops, paxels and nether star, dragon egg and draconium crops
+- Botany Pots Mystical Agriculture Compat: mystical agriculture seeds grow in botany pots
+- Mekanism Generators: solar, wind, gas, fission and fusion power for mekanism
+- Mekanism Tools: paxels and armor in mekanism's metals
+- Mekanism Additions: balloons, glow panels and plastic blocks
+- Mekanism TFMG Compat: mekanism builds on tfmg steel instead of making its own
+- Mekanism Ponders: ponder scenes for mekanism's multiblocks
+- Just Enough Mekanism Multiblocks: multiblock cost pages in jei
+- Create Aeronautics Mekanism Compat: mekanism teleporters, pipes and the digital miner work on airships
+- Applied Mekanistics: mekanism chemicals in ae2 storage and patterns
+- Ars Mekanica: a source dynamo that turns ars source into power
+- Create Propulsion: thrusters and propellers built for airships
+- Create Aeroworks: gyroscopes, joysticks and real flight controls for airships
+- Gadgets & Gizmos: more thrusters and contraption controls for aeronautics
+- Moog's Soaring Structures: floating islands with loot, something to fly your airship to
+- Ars Ocultas: ties ars nouveau and occultism together
+- Powah: power generators, energy cells and wireless charging for your gear
+- Hostile Neural Networks: train data models on mobs, then simulate them for their drops
+- Akashic Tome: one book that holds every guide book in the pack
+- Sophisticated Item Actions: find and restock items from the storage around you
+- Super Factory Manager: script your item and fluid logistics
+- The Aether: the classic sky dimension
+- Oritech: animated machines, lasers and mechs
+- libraries: Moog's Structure Lib, Jupiter, Uranus and owo-lib (beta)
+- Building Gadgets 2: direwolf20's building wands for copying, pasting and swapping big areas. curseforge only, install it from the title screen prompt or the extras page (cinderworks.dev/foundry/pack/extras/)
+- Mining Gadgets: a mining laser with upgrades. curseforge only, install it from the title screen prompt or the extras page
+- Charging Gadgets: a charging station that burns fuel to charge your gear. curseforge only, install it from the title screen prompt or the extras page
+- LaserIO: move items, fluids and energy around with lasers. curseforge only, install it from the title screen prompt or the extras page
+- Just Dire Things: direwolf20's automation blocks, tools and tiered gear. curseforge only, install it from the title screen prompt or the extras page
+- Ars Elemental: elemental schools, foci and familiars for ars nouveau. curseforge only, install it from the title screen prompt or the extras page
+- Ars Technica: ars nouveau meets create, with new glyphs, tools and an armor set. curseforge only, install it from the title screen prompt or the extras page
+- Starbunclemania: new starbuncle jobs and liquid source for ars nouveau. curseforge only, install it from the title screen prompt or the extras page
+- Flux Networks: wireless power across dimensions. curseforge only, install it from the title screen prompt or the extras page
+- Mob Grinding Utils: mob farm blocks like fans, the saw and xp tanks. curseforge only, install it from the title screen prompt or the extras page
+- Ender Storage: color-coded ender chests and tanks you can share with friends
+- Excessive Utilities: the extra utilities classics, remade
+- Item Collectors: blocks that vacuum up dropped items nearby
+- Pylons: pylons that hand out potion effects, push mobs away or harvest crops
+- Time in a Bottle: speed up any machine or crop for a while
+- libraries: Aaron
+
+### updated mods
+- Foundry Additions 0.2.2: the extras screen is a scrolling list now, with download all and install all buttons
+- Astral Sorcery moves to build 2.0.1.33, install it from the extras prompt
+
+### config changes
+- Akashic Tome only takes guide books now, spell books and scrolls stay out of it
+
+### heads up
+- the world was reset for this update. the Nether, the End and everything outside the old base region regenerate with the new mods
+- Thaumaturge is a test build shared by its author, it installs from the extras prompt
+
 ## 0.2.13 (10-07-2026)
 
 ### updated mods

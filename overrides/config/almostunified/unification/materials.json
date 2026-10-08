@@ -10,7 +10,11 @@
     "forbidden_arcanus",
     "apotheosis",
     "createcasing",
-    "createdeco"
+    "createdeco",
+    "createaddition",
+    "mekanism",
+    "enderio",
+    "industrialforegoing"
   ],
   "priority_overrides": {},
   "stone_variants": [
