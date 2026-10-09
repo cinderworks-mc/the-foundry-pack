@@ -9,6 +9,10 @@ const FOUNDRY_BOOK = "minecraft:written_book[minecraft:written_book_content={tit
 // namespace is patchouli, id patchouli:foundry_manual.
 const FOUNDRY_MANUAL = "patchouli:guide_book[patchouli:book=\"patchouli:foundry_manual\"]"
 
+// 10-09: one akashic tome that already holds every guide book in the pack (the field manual included), handed out once per player.
+// the loose manual give below was silently failing on first join, so it is gone. adding a mod with a guide book means adding a stack here.
+const FOUNDRY_TOME = 'akashictome:tome[akashictome:tool_content=[{id:"patchouli:guide_book",components:{"patchouli:book":"advancedperipherals:manual"}},{id:"patchouli:guide_book",components:{"patchouli:book":"apotheosis:apoth_chronicle"}},{id:"patchouli:guide_book",components:{"patchouli:book":"ars_nouveau:worn_notebook"}},{id:"patchouli:guide_book",components:{"patchouli:book":"buildinggadgets2:buildinggadgets2book"}},{id:"patchouli:guide_book",components:{"patchouli:book":"enderio:guide"}},{id:"patchouli:guide_book",components:{"patchouli:book":"goety:black_book","akashictome:defined_mod":"goety"}},{id:"patchouli:guide_book",components:{"patchouli:book":"goety:witches_brew","akashictome:defined_mod":"goety_2"}},{id:"patchouli:guide_book",components:{"patchouli:book":"industrialforegoing:industrial_foregoing"}},{id:"patchouli:guide_book",components:{"patchouli:book":"irons_spellbooks:iss_guide_book"}},{id:"patchouli:guide_book",components:{"patchouli:book":"justdirethings:justdirethingsbook"}},{id:"patchouli:guide_book",components:{"patchouli:book":"laserio:laseriobook"}},{id:"patchouli:guide_book",components:{"patchouli:book":"mysticalagriculture:guide"}},{id:"patchouli:guide_book",components:{"patchouli:book":"productivebees:guide"}},{id:"patchouli:guide_book",components:{"patchouli:book":"patchouli:foundry_manual"}},{id:"modonomicon:modonomicon",components:{"modonomicon:book_id":"neovitae:guide","akashictome:defined_mod":"neovitae"}},{id:"modonomicon:modonomicon",components:{"modonomicon:book_id":"occultism:dictionary_of_spirits","akashictome:defined_mod":"occultism"}},{id:"modonomicon:modonomicon",components:{"modonomicon:book_id":"witchery:guidebook","akashictome:defined_mod":"witchery"}},{id:"ae2:guide"},{id:"astralsorcery:tome"},{id:"aether:book_of_lore"},{id:"cookingforblockheads:recipe_book"},{id:"iceandfire:bestiary"},{id:"mekanism:dictionary"},{id:"draconicevolution:info_tablet"},{id:"powah:book"},{id:"solonion:food_book"},{id:"aquamirae:logbook"},{id:"starcatcher:starcatcher_guide"},{id:"thaumaturge:thaumonomicon"}]]'
+
 // give can return 0 right after a restart, while the server is still ticking
 // through the join backlog - retry a few times, 1s apart, before giving up
 // (08-27: hit two players in a row on a restart-heavy night).
@@ -42,14 +46,38 @@ function tryGiveBook(server, player) {
     return
   }
   server.runCommandSilent('give ' + player.username + ' ' + FOUNDRY_BOOK)
-  // 0.2.9: also hand the patchouli field manual (the deep guide - workshop /
-  // expedition / spellbook). external-folder book, so its id is always
-  // patchouli:foundry_manual regardless of pack modid (see manual-give-snippet).
-  server.runCommandSilent('give ' + player.username + ' ' + FOUNDRY_MANUAL)
   player.persistentData.putBoolean('foundry_book', true)
   player.tell('a book about this place is in your inventory. read it or do not, up to you.')
-  player.tell('there is also a field manual (the thicker book) - it goes deeper on the workshop, expeditions and magic. lost either one? /foundrybook')
   delete pendingBook[player.username]
+}
+
+// the tome: give it, check it actually landed, only then set the flag. runCommandSilent returns nothing,
+// so the inventory count is the only way to know. up to 3 tries, 2s apart.
+function ftGiveTome(server, username, attempt) {
+  var player = server.players.find(p => p.username === username)
+  if (!player) return
+  if (player.persistentData.getBoolean('foundry_tome')) return
+  if (player.inventory.count('akashictome:tome') > 0) {
+    player.persistentData.putBoolean('foundry_tome', true)
+    return
+  }
+  if (attempt > 3) {
+    console.error('foundry: tome give failed for ' + username + ' after 3 attempts, /foundrybook still works')
+    return
+  }
+  server.runCommandSilent('give ' + username + ' ' + FOUNDRY_TOME)
+  server.scheduleInTicks(40, function () { ftVerifyTome(server, username, attempt) })
+}
+
+function ftVerifyTome(server, username, attempt) {
+  var player = server.players.find(p => p.username === username)
+  if (!player) return
+  if (player.inventory.count('akashictome:tome') > 0) {
+    player.persistentData.putBoolean('foundry_tome', true)
+    player.tell('there is a tome in your inventory with every mod guide book in it. right click it and pick one. lost it? /foundrybook')
+  } else {
+    ftGiveTome(server, username, attempt + 1)
+  }
 }
 
 // 08-30: distant horizons ships turned off (it was defaulting on and tanking weak pcs).
@@ -63,6 +91,10 @@ function dhNote(player) {
 PlayerEvents.loggedIn(event => {
   tryGiveBook(event.server, event.player)
   dhNote(event.player)
+  var name = event.player.username
+  var srv = event.server
+  // a few seconds after login, once the join backlog has cleared
+  srv.scheduleInTicks(100, function () { ftGiveTome(srv, name, 1) })
 })
 
 ServerEvents.tick(event => {
@@ -89,14 +121,14 @@ ServerEvents.tick(event => {
   })
 })
 
-// /foundrybook - hand the book to whoever asks (lost it, or joined before the script worked)
+// /foundrybook - hand the welcome book and the tome to whoever asks (lost them, or joined before the script worked)
 ServerEvents.commandRegistry(event => {
   const { commands: Commands } = event
   event.register(Commands.literal('foundrybook').executes(ctx => {
     const p = ctx.source.player
     if (!p) return 0
     ctx.source.server.runCommandSilent('give ' + p.username + ' ' + FOUNDRY_BOOK)
-    ctx.source.server.runCommandSilent('give ' + p.username + ' ' + FOUNDRY_MANUAL)
+    ctx.source.server.runCommandSilent('give ' + p.username + ' ' + FOUNDRY_TOME)
     return 1
   }))
 })
