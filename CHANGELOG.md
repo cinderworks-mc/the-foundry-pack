@@ -7,6 +7,33 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 1.0.1 (10-08-2026)
+
+### added mods
+- Pipez: item, fluid, energy and gas pipes you can upgrade and filter, a simple alternative to conduits
+- Mekanism Pipez Fix: stops Pipez pipes from disconnecting from Mekanism multiblocks
+- FTB Ultimine: vein mining with an outline preview, replaces Veinminer. curseforge only, install it from the title screen prompt or the extras page
+
+### added features
+- report a problem or an idea from chat: type !log <what went wrong> or !idea <your idea>. it records where you are and what you were looking at
+
+### updated mods
+- routine bumps across the pack: ModernFix, Entity Culling, Fusion, Ambient Sounds, Puzzles Lib, AzureLib, Starcatcher, Chat Animation, Spice of Life Onion, Ace's Spell Utils, SuperMartijn642's Core Lib, Kotlin for Forge, Create Additions, Create Enchantment Industry and Ars Delight
+- Sophisticated Backpacks, Storage and Core, with their Create integrations
+- Just Another Witchery Remake 0.5.13.2
+- Astral Sorcery moves to build 2.0.1.35, install it from the extras prompt
+- NeoForge 21.1.252, which Quark 4.1-487 needs
+- Foundry Additions 0.2.3
+
+### removed mods
+- Veinminer, Veinminer Client and Veinminer Enchantment: replaced by FTB Ultimine
+- the RPG series: Archers, Arsenal, Jewelry, Paladins & Priests, Rogues & Warriors, Wizards, Runes, Spell Engine, Spell Power, Ranged Weapon API, Shield API and Relics RPG
+
+### heads up
+- the launcher will ask to update NeoForge when you update the pack, say yes
+- the RPG series items are gone, including any you were carrying or had stored. the two RPG curio slots (spell quiver and spell trinket) are gone too
+- items with the Veinminer enchantment lose it. FTB Ultimine is not an enchantment, hold the grave key (the ` key) to use it
+
 ## 1.0.0 (10-08-2026)
 
 ### added mods
