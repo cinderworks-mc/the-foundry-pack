@@ -7,6 +7,14 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 1.0.4 (10-09-2026)
+
+### added features
+- new players get a tome that already holds every mod's guide book, instead of a pile of loose books. everyone gets it once, and /foundrybook hands out another if you lose it
+
+### config changes
+- sifting gravel with an advanced brass mesh can now drop crushed raw lead, at the same odds as copper and zinc
+
 ## 1.0.3 (10-09-2026)
 
 ### config changes

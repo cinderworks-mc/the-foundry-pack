@@ -109,3 +109,20 @@ ServerEvents.recipes(function (event) {
     }).id('foundry:milling/' + stone.split(':')[1] + '_to_gravel')
   }
 })
+
+// 10-09: lead from the sifter (patrick). create sifter ships raw lead pieces but no sifting recipe drops
+// any lead, so lead only came from tfmg's ore. one more line on the existing gravel + advanced brass
+// mesh table (copper/zinc sit at 0.2 there), stacked like the lines above. crushed raw lead smelts and
+// blasts into tfmg's lead ingot (tfmg's own lead_ingot_from_crushed_blasting recipes), so it is not a dead end.
+ServerEvents.recipes(function (event) {
+  event.custom({
+    type: 'createsifter:sifting',
+    input: { item: 'minecraft:gravel' },
+    mesh: { count: 1, id: 'createsifter:advanced_brass_mesh' },
+    processingTime: 500,
+    results: [
+      { chance: 0.2, id: 'create:crushed_raw_lead' }
+    ]
+  }).id('foundry:sifting/crushed_lead_from_gravel')
+})
+
