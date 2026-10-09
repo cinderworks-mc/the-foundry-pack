@@ -7,6 +7,16 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 1.0.2 (10-09-2026)
+
+### config changes
+- loot unification is on: copper, iron and the other shared metals drop as one version of each item, so you stop collecting four different copper nuggets
+
+### removed mods
+- Mekanism TFMG Compat: it rewrote Mekanism's recipes to run on TFMG steel and lead. Mekanism and TFMG each keep their own recipes again
+- Create: CC Better Recipes: it replaced about 20 CC: Tweaked recipes (computers, monitors, cables) with Create parts. CC: Tweaked keeps its own recipes again
+- Create Cybernetics and Cybernetics Vanity: the implant mod and its cyberspace dimension are gone
+
 ## 1.0.1 (10-08-2026)
 
 ### added mods

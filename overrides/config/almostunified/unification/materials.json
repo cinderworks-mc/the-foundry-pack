@@ -54,6 +54,6 @@
     "create_things_and_misc:copper_scaffolding_craft"
   ],
   "recipe_viewer_hiding": true,
-  "loot_unification": false,
+  "loot_unification": true,
   "ignored_loot_tables": []
 }
