@@ -14,7 +14,10 @@
     "createaddition",
     "mekanism",
     "enderio",
-    "industrialforegoing"
+    "industrialforegoing",
+    "occultism",
+    "createpropulsion",
+    "oritech"
   ],
   "priority_overrides": {},
   "stone_variants": [
@@ -24,7 +27,11 @@
     "diorite",
     "granite",
     "netherrack",
-    "end_stone"
+    "end_stone",
+    "gloomslate",
+    "sculk_stone",
+    "depthrock",
+    "shiverstone"
   ],
   "tags": [
     "c:dusts/{material}",
@@ -44,7 +51,14 @@
   "ignored_tags": [],
   "ignored_items": [
     "forbidden_arcanus:stella_arcanum",
-    "createaddition:copper_wire"
+    "createaddition:copper_wire",
+    "goety:magic_emerald",
+    "goety:awakened_emerald_block",
+    "oritech:biosteel_ingot",
+    "enderio:iron_gear",
+    "excessive_utilities:colored_.*_block_.*",
+    "eternal_starlight:thioquartz_cluster",
+    "thaumaturge:.*brass.*"
   ],
   "ignored_recipe_types": [
     "cucumber:shaped_tag"

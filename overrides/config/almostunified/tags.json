@@ -1,0 +1,12 @@
+{
+  "custom_tags": {},
+  "tag_substitutions": {},
+  "item_tag_inheritance_mode": "ALLOW",
+  "item_tag_inheritance": {
+    "c:ender_dusts": [
+      "c:dusts/ender_pearl"
+    ]
+  },
+  "block_tag_inheritance_mode": "ALLOW",
+  "block_tag_inheritance": {}
+}
