@@ -2,6 +2,6 @@
 "Whitelisted Items" = ["advancedperipherals:book", "aether:book_of_lore", "aquamirae:logbook", "astralsorcery:tome", "cookingforblockheads:recipe_book", "draconicevolution:info_tablet", "powah:book", "solonion:food_book"]
 "Whitelisted Names" = ["guide", "modonomicon", "manual", "handbook", "notebook", "journal", "dictionary", "bestiary", "lexicon", "compendium", "encyclopedia", "chronicle"]
 "Blacklisted Mods" = []
-"Blacklisted Items" = ["excessive_utilities:manual_mill", "createcybernetics:data_shard_infolog_cyberbestiary", "createcybernetics:data_shard_infolog_fbc_guide", "createcybernetics:data_shard_infolog_robosurgeon_manual", "createcybernetics:data_shard_infolog_surgery_table_manual"]
+"Blacklisted Items" = ["excessive_utilities:manual_mill"]
 "Mod Aliases" = ["nautralpledge=botania", "thermalexpansion=thermalfoundation", "thermaldynamics=thermalfoundation", "thermalcultivation=thermalfoundation", "redstonearsenal=thermalfoundation", "rftoolsdim=rftools", "rftoolspower=rftools", "rftoolscontrol=rftools", "ae2stuff=appliedenergistics2", "animus=bloodmagic", "integrateddynamics=integratedtunnels", "mekanismgenerators=mekanism", "mekanismtools=mekanism", "deepresonance=rftools", "xnet=rftools", "buildcrafttransport=buildcraft", "buildcraftfactory=buildcraft", "buildcraftsilicon=buildcraft"]
 "Hide Book Render" = false

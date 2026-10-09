@@ -428,7 +428,7 @@ iris-flw-compat | 1.21.1+2.4.0-release | auto   # iris/flywheel render compat
 cc-tweaked | 1.120.2 | auto   # alpha-only line for 1.21.1 neoforge
 cc-sable | 1.3.4 | auto
 cccbridge | 1.7.3 | auto
-create-ccbr | 1.2.1 | auto   # alpha-tagged at this version
+# create-ccbr | 1.2.1 | auto   # alpha-tagged at this version   # REMOVED for 1.0.2 (patrick 10-09): it replaces ~20 cc:tweaked recipes (computers, monitors, cables) with create parts
 
 ## food (08-28-2026, patrick: keep both delights)
 enders-delight | 1.3.1 | auto   # end-themed farmer's delight addon, distinct from ends-delight above
@@ -583,8 +583,8 @@ create-sophisticated-backpacks | 1.2 | resourcepack
 toms-create-storage | 2.1 | resourcepack
 
 ## added 10-05-2026 (patrick): cybernetics + its vanity addon. both client=required server=required.
-createcybernetics | 0.5.2-HOTFIX | both
-cybernetics-vanity | 0.5.2 | both
+# createcybernetics | 0.5.2-HOTFIX | both   # REMOVED for 1.0.2 (patrick 10-09): patrick: "sounds cool but seems weird". adds a cyberspace dimension + implants
+# cybernetics-vanity | 0.5.2 | both   # REMOVED for 1.0.2 (patrick 10-09): addon of createcybernetics, goes with it
 
 ## our own mod (10-07-2026): title screen prompt that walks players through the extras we can't ship in the pack
 github:cinderworks-mc/foundry-additions@v0.2.3/foundryadditions-1.21.1-0.2.3.jar | - | both
@@ -716,11 +716,11 @@ botany-pots-mystical-agriculture-compat | 21.1.12 | auto   # ma seeds in botany 
 ## mekanism modules. generators/tools/additions are EXACT-version locked to core (toml: mekanism [10.7.19]):
 ## bump all four together, same version_number.
 mekanism-generators | 10.7.19.85 | auto   # third power ladder + fission/fusion/radiation
-mekanism-tools | 10.7.19.85 | auto   # paxels + armor; mekanism-tfmg-compat strips its steel set
+mekanism-tools | 10.7.19.85 | auto   # paxels + armor (the tfmg compat that stripped its steel set is gone since 1.0.2)
 mekanism-additions | 10.7.19.85 | auto   # balloons, glow panels, plastic blocks. baby mob spawns are on by default, config later
 
 ## mekanism glue + readability
-mekanism-tfmg-compat | 0.4-1.21.1 | auto   # modrinth declares no deps; jar requires mekanism [1.21.1-10.7.15.81,) + tfmg [1.1.0,), tfmg CE 1.2.4b satisfies. dedupes lead/steel, mek starts from tfmg steel
+# mekanism-tfmg-compat | 0.4-1.21.1 | auto   # modrinth declares no deps; jar requires mekanism [1.21.1-10.7.15.81,) + tfmg [1.1.0,), tfmg CE 1.2.4b satisfies. dedupes lead/steel, mek starts from tfmg steel   # REMOVED for 1.0.2 (patrick 10-09): it rewrites ~76 mekanism recipes to run on tfmg steel/lead and has no config toggle. mekanism and tfmg now keep their own recipes
 mekanism-ponders | 1.0.3-1.21.1 | auto   # jarjars ponder 1.0.82 + flywheel 1.0.6, byte-identical to what create 6.0.10 bundles
 just-enough-mekanism-multiblocks | 7.21 | auto   # client-only per modrinth (server unsupported). jei multiblock cost pages
 create-aeronautics-mekanism-compatibility | 0.1.21 | auto   # mek on sable sublevels. sable [1.2.2,) + mekanism [10.7.19,). open #11: client crash with mek pipes on contraptions, keep them off ships
