@@ -7,6 +7,11 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 1.0.5 (10-09-2026)
+
+### config changes
+- modded trees can be planted in Botany Pots: Thaumaturge greatwood and silverwood, Goety, Ice and Fire dreadwood, Ghosts, Witchery and Tropicraft (palm, mahogany, fruit trees, mangroves). they grow logs, sometimes the sapling back, leaves with shears, and fruit or nuts on the fruit trees
+
 ## 1.0.4 (10-09-2026)
 
 ### added features
