@@ -7,6 +7,16 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 1.0.3 (10-09-2026)
+
+### config changes
+- fixed items that were wrongly merged into other items: Goety's magic emerald, Oritech's biosteel, Thaumaturge's alchemical brass, Excessive Utilities' colored lapis blocks and EnderIO's infinity bimetal gear are their own items again, so Goety's first gate, biosteel and alchemical brass work
+- ores from the Deeper Darker and the Undergarden no longer turn into vanilla ores when mined with silk touch
+- silver and platinum from different mods now merge into one version each, and coal, charcoal, quartz, ender pearl dust and saltpeter dust do too
+- the Foundry Breach Pearl recipe loads again, so it can be crafted
+- the Twilight Forest uncrafting table no longer swaps ingredients
+- tamed Ice and Fire dragons no longer destroy blocks
+
 ## 1.0.2 (10-09-2026)
 
 ### config changes
