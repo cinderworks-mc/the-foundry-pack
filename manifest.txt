@@ -821,3 +821,29 @@ pipez | neoforge-1.21.1-1.2.31 | auto
 ## added 10-08-2026 (patrick, 1.0.1): mekanism pipez fix. modrinth 1.0.1 (02-22-2026, tagged beta, allow-listed), MIT. fixes pipez
 ## disconnecting from mekanism multiblocks. server side only (modrinth client: unsupported), requires pipez + mekanism, both in the pack.
 mekanism-pipez-fix | 1.0.1 | server
+
+## added 10-11-2026 (patrick, 1.0.6): enderchests + endertanks 1.21.1-1.0 (08-22-2025 releases, all rights reserved, both sides).
+## linked chests/tanks, public/personal/team. need shetiphiancore 1.21.1-1.1.
+enderchests | 1.21.1-1.0 | auto
+endertanks | 1.21.1-1.0 | auto
+shetiphiancore | 1.21.1-1.1 | auto
+
+## added 10-11-2026 (patrick, 1.0.6): rftools base 6.0.11, utility 7.0.12, builder 7.0.7 (all betas, allow-listed, MIT).
+## mcjtylib 9.0.21 is the hard dep. the one probe is optional and skipped, jade covers it.
+mcjtylib | 1.21-9.0.21 | auto
+rftools-base | 1.21-6.0.11 | auto
+rftools-utility | 1.21-7.0.12 | auto
+rftools-builder | 1.21-7.0.7 | auto
+
+## added 10-11-2026 (patrick, 1.0.6): recipe viewer addons. emi stays client-only; emi-ores' emi dep is declared side CLIENT so the server runs it
+## without emi. advanced-loot-info (beta) needs advanced-core-info (beta). justenoughbreeding works under jei or emi.
+emiffect | 2.1.6+mc1.21.1 | auto
+emi-enchanting | 0.1.2+1.21+neoforge | auto
+emi-ores | 1.3+1.21.1+neoforge | auto
+extra-mod-integrations | 1.0.3+1.21.1.neoforge | auto
+justenoughbreeding | 3.3.1 | auto
+advanced-core-info | 1.21.1-1.4.0 | auto
+advanced-loot-info | 1.21.1-2.4.0 | auto
+
+## added 10-11-2026 (patrick, 1.0.6): jei-worldgen 1.4.5, ore/worldgen info for jei users (emi-ores covers emi). no deps.
+jei-worldgen | 1.4.5+neoforge-1.21.1 | auto

@@ -7,6 +7,23 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 1.0.6 (10-11-2026)
+
+### added mods
+- Ender Chests and Ender Tanks: linked chests, bags, tanks and buckets that share contents anywhere, even across dimensions. public, personal or team
+- RFTools (Base, Utility and Builder): the builder, shield system and utility blocks from the classic tech mod. a beta line, McJtyLib and ShetiPhian Core come along for the ride
+- EMI Ores, JEI Worldgen and Advanced Loot Info: look up where ores generate, what drops from blocks, mobs and chests, and what villagers trade, right in the recipe viewer
+- Just Enough Breeding, EMIffect, EMI Enchanting and Extra Mod Integrations: breeding, potion effect and enchantment info, and recipe viewer support for more mods (client side)
+
+### config changes
+- grottols no longer spawn on mob grinding utils dreadful dirt
+- cows, sheep, pigs and chickens can spawn on mob grinding utils delightful dirt again, it only produced mod creatures before
+- delightful dirt only spawns vanilla animals now, every mod creature is on its exclusion list, and it no longer grows grass or flowers on top of itself (they blocked its own spawning)
+- the tempad chronometer makes 20 chronons per cycle instead of 1, so a door takes about 1.5 minutes of charging instead of 30
+- target dummies named "raw" lose the apotheosis armor stats, so they show your true damage. unnamed dummies keep them
+- wither skeleton skulls drop about three times as often: 8% base, 12% with looting plus 4% per extra level (was 2.5% and 3.5% plus 1%)
+- the deepslate extruder recipe no longer has a speed cap, so faster setups can run it
+
 ## 1.0.5 (10-09-2026)
 
 ### config changes

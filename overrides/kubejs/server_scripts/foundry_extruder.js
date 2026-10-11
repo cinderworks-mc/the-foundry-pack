@@ -32,13 +32,12 @@ ServerEvents.recipes(function (event) {
 
   // height caps dropped pack-wide 09-14 ("feels like an odd restriction"). the mod gates its
   // water+lava stones by y band (deepslate y<=0, andesite/diorite/granite y 0-60); we readd
-  // them bandless. overlap is fine - cobblestone already matches everywhere with no reqs and
-  // the extruder disambiguates multi-match. speed caps kept, rest identical. our sky stone
-  // recipe above lost its maxY(-20) the same day, rpm band kept.
+  // them bandless. deepslate's 16 rpm cap went too (10-09, a 4096 su extruder was rejected). overlap
+  // is fine - cobblestone already matches everywhere with no reqs and the extruder disambiguates
+  // multi-match. our sky stone recipe above lost its maxY(-20) the same day, rpm band kept.
   event.remove({ id: 'create_mechanical_extruder:extruding/deepslate' })
   X.extruding(Item.of('minecraft:deepslate'),
     [BlockPredicate.of('minecraft:water'), BlockPredicate.of('minecraft:lava')])
-    .requirements([RecipeRequirement.maxSpeed(16.0)])
     .id('foundry:extruding/deepslate')
   // advanced netherrack: the mod's overworld route (brass + netherrack catalyst) eats its lava
   // every press. patrick 09-14: needing the brass extruder IS the balance, drop the lava tax.
