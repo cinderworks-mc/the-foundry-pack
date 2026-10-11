@@ -847,3 +847,18 @@ advanced-loot-info | 1.21.1-2.4.0 | auto
 
 ## added 10-11-2026 (patrick, 1.0.6): jei-worldgen 1.4.5, ore/worldgen info for jei users (emi-ores covers emi). no deps.
 jei-worldgen | 1.4.5+neoforge-1.21.1 | auto
+
+## added 10-11-2026 (patrick, 1.0.8): simply light 1.5.3, flanks255's lamp blocks (full lamps, slabs, panels, fixtures, bulbs, edge strips,
+## lamp post). no block entities. MIT, curseforge + github only (no modrinth), so it comes from the github release. both sides.
+github:Flanks255/simplylight@v1.5.3/simplylight-1.5.3+1.21.1-b4.jar | - | both
+
+## added 10-11-2026 (patrick, 1.0.8): the macaw's building suite. nothing in the pack covered windows, doors, fences, roofs, bridges or paths.
+## all seven are release builds with no dependencies, both sides. windows, roofs and bridges are all rights reserved (modrinth link only), the rest MIT.
+macaws-windows | 2.4.2 | auto
+macaws-doors | 1.1.5 | auto
+macaws-trapdoors | 1.1.5 | auto
+macaws-fences-and-walls | 1.2.1 | auto
+macaws-roofs | 2.3.2 | auto
+macaws-bridges | 3.1.2 | auto
+macaws-paths-and-pavings | 1.1.1 | auto
+

@@ -78,3 +78,20 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'extendedae:infinity_cobblestone_cell' })
   event.remove({ output: 'extendedae:infinity_water_cell' })
 })
+
+// 10-11: washing crushed raw uranium gives nuggets, like the other crushed metals (patrick). oritech ships its
+// own splashing recipe for anything tagged c:clumps/uranium (2 uranium dust + 25% small plutonium dust), and it
+// won over create's own washing recipe for the same crushed raw uranium. both go, and one recipe replaces them:
+// create's 9 mekanism uranium nuggets plus oritech's 25% small plutonium dust, so the bonus survives.
+ServerEvents.recipes(event => {
+  event.remove({ id: 'oritech:splashing/compat/create/uraniumclump' })
+  event.remove({ id: 'create:splashing/mekanism/crushed_raw_uranium' })
+  event.custom({
+    type: 'create:splashing',
+    ingredients: [{ item: 'create:crushed_raw_uranium' }],
+    results: [
+      { count: 9, id: 'mekanism:nugget_uranium' },
+      { chance: 0.25, id: 'oritech:small_plutonium_dust' }
+    ]
+  }).id('foundry:splashing/crushed_raw_uranium')
+})

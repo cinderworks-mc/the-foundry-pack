@@ -7,6 +7,16 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 1.0.8 (10-11-2026)
+
+### added mods
+- Simply Light: lamps in lots of shapes, full blocks, slabs, panels, fixtures, bulbs, edge strips and a lamp post. no tile entities, so they stay cheap
+- Macaw's Windows, Doors, Trapdoors, Fences and Walls, Roofs, Bridges and Paths and Pavings: windows with shutters and blinds, doors and trapdoors in every wood, fences, walls and gates, real roof blocks, bridges and paved paths
+
+### config changes
+- osmium, tin, silver and uranium can be sifted from gravel with an advanced brass mesh: osmium and tin 20% like copper, zinc and lead, silver 10%, uranium 5%. crushed raw osmium, tin and uranium smelt or blast into Mekanism ingots, and crushed raw silver into Occultism silver ingots (the pack uses Occultism silver)
+- washing crushed raw uranium gives 9 uranium nuggets like the other crushed metals instead of Oritech uranium dust, and keeps Oritech's 25% chance of small plutonium dust
+
 ## 1.0.7 (10-11-2026)
 
 ### removed mods

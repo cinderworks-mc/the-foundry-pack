@@ -126,3 +126,42 @@ ServerEvents.recipes(function (event) {
   }).id('foundry:sifting/crushed_lead_from_gravel')
 })
 
+
+// 10-11: osmium from the sifter (patrick). create sifter has a raw osmium piece but no sifting recipe drops
+// osmium, so osmium only came from mekanism's ore. one more line on the gravel + advanced brass mesh table,
+// 0.2 like copper, zinc and lead. create's crushed raw osmium smelts and blasts into mekanism's osmium ingot
+// (create's ingot_osmium_compat_mekanism recipes) and splashes too, so it is not a dead end.
+ServerEvents.recipes(function (event) {
+  event.custom({
+    type: 'createsifter:sifting',
+    input: { item: 'minecraft:gravel' },
+    mesh: { count: 1, id: 'createsifter:advanced_brass_mesh' },
+    processingTime: 500,
+    results: [
+      { chance: 0.2, id: 'create:crushed_raw_osmium' }
+    ]
+  }).id('foundry:sifting/crushed_osmium_from_gravel')
+})
+
+// 10-11: tin, uranium and silver from the sifter (patrick). same gravel + advanced brass mesh table as
+// osmium. tin 0.2 like the other common metals, silver 0.1, uranium 0.05 since it feeds reactors.
+// create's crushed raw tin, uranium and silver smelt, blast and splash into ingots through create's own
+// compat recipes (silver is unified to occultism's, ice and fire's silver items are hidden and swapped out of recipes by almostunified).
+ServerEvents.recipes(function (event) {
+  var lines = [
+    { id: 'create:crushed_raw_tin', chance: 0.2, name: 'crushed_tin_from_gravel' },
+    { id: 'create:crushed_raw_silver', chance: 0.1, name: 'crushed_silver_from_gravel' },
+    { id: 'create:crushed_raw_uranium', chance: 0.05, name: 'crushed_uranium_from_gravel' }
+  ]
+  for (var i = 0; i < lines.length; i++) {
+    event.custom({
+      type: 'createsifter:sifting',
+      input: { item: 'minecraft:gravel' },
+      mesh: { count: 1, id: 'createsifter:advanced_brass_mesh' },
+      processingTime: 500,
+      results: [
+        { chance: lines[i].chance, id: lines[i].id }
+      ]
+    }).id('foundry:sifting/' + lines[i].name)
+  }
+})
