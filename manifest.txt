@@ -793,7 +793,7 @@ bundle:https://edge.forgecdn.net/files/8724/782/ftb-teams-neoforge-2101.1.11.jar
 ## same check as rounds 2-5: modrinth required deps + every jar's neoforge.mods.toml required modIds matched against the pack.
 ## redirect scan vs the 0.2.14-dev instance jars (jarjar included): only excessive utilities redirects, no other redirect on
 ## its two calls. nothing here is boot-tested yet.
-ender-storage | 2.13.0.191 | auto   # color-coded ender chests/tanks/pouches. codechickenlib [4.6.0,5.0.0) ok with 4.6.1.529 (draconic's). no mixins. build is from 02-2025
+# ender-storage | 2.13.0.191 | auto   # REMOVED 10-11-2026 (patrick): replaced by enderchests + endertanks. both together broke jade on the ender blocks ("No HUD Data Received from Server")
 excessive-utilities | 1.10.0-build.64 | auto   # extra utilities remake. curios [9.0.5,) + kotlinforforge [5.12.0,6.0.0) pinned, aaron (below). build is from 10-06-2026, one day old. LGPL-3.0. @Redirects AbstractFurnaceBlockEntity.serverTick -> ItemStack.shrink and (client) LivingEntityRenderer.render -> EntityModel.renderToBuffer; the second call is also touched by quark/cybernetics (@Inject), emf (@ModifyExpressionValue), tombstone/eternal starlight/gizmos/jawr (@WrapOperation), witchery (@WrapWithCondition): mixin/mixinextras stack those on a redirect, no second @Redirect, but it is the place to look on a render crash
 item-collectors | 1.1.10-neoforge-mc1.21 | auto   # ranged item vacuum blocks. supermartijn core [1.1.17,1.2.0) + config [1.1.6,), both pinned. ARR, build is from 07-2024 (lists 1.21 + 1.21.1)
 pylons | 5.4.2 | auto   # potion/expulsion/harvester pylons. no deps, no mixins. ARR

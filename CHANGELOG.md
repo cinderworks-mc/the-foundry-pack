@@ -7,6 +7,11 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 1.0.7 (10-11-2026)
+
+### removed mods
+- Ender Storage: replaced by Ender Chests and Ender Tanks. running both made the Jade tooltip on the ender blocks fail with "No HUD Data Received from Server". any Ender Storage chests, tanks or pouches you placed are gone
+
 ## 1.0.6 (10-11-2026)
 
 ### added mods
