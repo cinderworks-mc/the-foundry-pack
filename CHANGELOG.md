@@ -7,6 +7,11 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 1.0.10 (10-12-2026)
+
+### removed mods
+- Envelope: it crashed the game when joining a server with the current JEI. everyone should update, and anyone who has the 1.0.9 jar can delete it
+
 ## 1.0.9 (10-12-2026)
 
 ### added mods

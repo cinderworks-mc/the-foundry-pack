@@ -874,5 +874,5 @@ ae2-lightning-tech | 2.1.2-beta3 | auto
 ## added 10-12-2026 (patrick, 1.0.9): create bionics 2.5.0 (robot animals for create, MIT, needs create) and envelope 0.7.5 (letters, packages and pigeons between players, GPL-3.0).
 ## both release builds, no other dependencies, both sides.
 create-bionics | 2.5.0 | auto
-envelope | 0.7.5 | auto
+# envelope | 0.7.5 | auto   # REMOVED 10-12-2026 (1.0.10): its jei.BasicRecipeTransferHandlerMixin fails to apply against jei 19.54.0.427 and crashes every client on world join
 
