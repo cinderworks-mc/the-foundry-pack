@@ -1,0 +1,8 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:3",
+  "ingredient": {
+    "item": "witchery:koboldite_ingot"
+  },
+  "color": "4E8C5A"
+}

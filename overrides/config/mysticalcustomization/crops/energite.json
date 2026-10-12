@@ -1,0 +1,8 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:4",
+  "ingredient": {
+    "item": "oritech:energite_ingot"
+  },
+  "color": "4FD9C9"
+}

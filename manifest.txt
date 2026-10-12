@@ -862,3 +862,17 @@ macaws-roofs | 2.3.2 | auto
 macaws-bridges | 3.1.2 | auto
 macaws-paths-and-pavings | 1.1.1 | auto
 
+## added 10-12-2026 (patrick, 1.0.9): neosync 1.21.1-1.7.1, a port of the Sync mod. grow shells (clones) with their own inventory, xp and gamemode and swap between them.
+## MIT, release build, both sides, every dependency optional. costs 20 HP to take a genetic sample by default (config warnPlayerInsteadOfKilling).
+neosync | 1.21.1-1.7.1 | auto
+
+## added 10-12-2026 (patrick, 1.0.9): ae2 lightning tech 2.1.2-beta3, an ae2 addon with a lightning energy system and overload machines. LGPL, both sides.
+## needs thunderbolt-core 2.0.3-beta2 (ae2 only). both are beta builds, allow-listed.
+thunderbolt-core | 2.0.3-beta2 | auto
+ae2-lightning-tech | 2.1.2-beta3 | auto
+
+## added 10-12-2026 (patrick, 1.0.9): create bionics 2.5.0 (robot animals for create, MIT, needs create) and envelope 0.7.5 (letters, packages and pigeons between players, GPL-3.0).
+## both release builds, no other dependencies, both sides.
+create-bionics | 2.5.0 | auto
+envelope | 0.7.5 | auto
+

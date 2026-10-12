@@ -1,0 +1,8 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:4",
+  "ingredient": {
+    "item": "extendedae:entro_ingot"
+  },
+  "color": "8E7CC3"
+}

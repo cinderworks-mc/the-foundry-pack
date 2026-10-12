@@ -1,0 +1,8 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:4",
+  "ingredient": {
+    "item": "undergarden:utherium_crystal"
+  },
+  "color": "B04BD6"
+}

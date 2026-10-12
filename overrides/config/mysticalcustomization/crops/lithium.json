@@ -1,0 +1,8 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:2",
+  "ingredient": {
+    "item": "tfmg:lithium_ingot"
+  },
+  "color": "DADDE3"
+}

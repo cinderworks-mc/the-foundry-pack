@@ -1,0 +1,8 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:4",
+  "ingredient": {
+    "item": "eternal_starlight:aethersent_ingot"
+  },
+  "color": "7DE0F2"
+}

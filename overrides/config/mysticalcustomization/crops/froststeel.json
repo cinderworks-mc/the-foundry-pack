@@ -1,0 +1,8 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:3",
+  "ingredient": {
+    "item": "undergarden:froststeel_ingot"
+  },
+  "color": "8FD3E8"
+}

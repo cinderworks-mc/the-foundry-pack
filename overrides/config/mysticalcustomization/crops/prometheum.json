@@ -1,0 +1,8 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:5",
+  "ingredient": {
+    "item": "oritech:prometheum_ingot"
+  },
+  "color": "F26B2E"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:3",
+  "ingredient": {
+    "item": "forbidden_arcanus:deorum_ingot"
+  },
+  "color": "C99A3B"
+}

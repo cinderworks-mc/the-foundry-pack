@@ -1,0 +1,8 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:3",
+  "ingredient": {
+    "item": "eternal_starlight:deepsilver_ingot"
+  },
+  "color": "8E9DB5"
+}

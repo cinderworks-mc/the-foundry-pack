@@ -1,0 +1,8 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:3",
+  "ingredient": {
+    "item": "oritech:duratium_ingot"
+  },
+  "color": "6D8FA8"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:3",
+  "ingredient": {
+    "item": "justdirethings:blazegold_ingot"
+  },
+  "color": "F2B531"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:3",
+  "ingredient": {
+    "item": "thaumaturge:ingot_thaumium"
+  },
+  "color": "5B3F9A"
+}

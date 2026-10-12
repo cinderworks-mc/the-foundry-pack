@@ -1,0 +1,8 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:2",
+  "ingredient": {
+    "item": "tropicraft:manganese_ingot"
+  },
+  "color": "7E6F8E"
+}

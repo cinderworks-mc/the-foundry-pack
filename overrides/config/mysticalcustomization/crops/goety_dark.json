@@ -1,0 +1,8 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:3",
+  "ingredient": {
+    "item": "goety:dark_ingot"
+  },
+  "color": "2B2B3A"
+}

@@ -7,6 +7,20 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 1.0.9 (10-12-2026)
+
+### added mods
+- NeoSync: grow shells, spare bodies of yourself with their own inventory, xp and gamemode, and swap between them. taking your genetic sample costs 20 HP, so keep a totem or a golden apple handy
+- AE2 Lightning Tech: an AE2 addon with a lightning energy system, advanced machines and overload crafting. a beta build, Thunderbolt Core comes along as its library
+- Create Bionics: robot animals powered by Create
+- Envelope: write letters, send packages and have pigeons deliver them to other players
+
+### added features
+- 27 new Mystical Agriculture crops for metals from other mods: Entro (ExtendedAE), Mithril and Pyrium (Iron's Spells), Deorum and Obsidiansteel (Forbidden Arcanus), Ferricore, Blazegold and Eclipse Alloy (Just Dire Things), Cloggrum, Froststeel and Utherium (Undergarden), Iesnium (Occultism), Goety's Dark Ingot and Pale Steel, Thaumium (Thaumaturge), Duratium, Adamant, Energite and Prometheum (Oritech), Lithium (TFMG), Manganese and Zircon (Tropicraft), Aethersent, Amaramber, Deepsilver and Unrealium (Eternal Starlight), and Koboldite (Witchery). tiers run from 2 to 5 to match each metal's place in its own mod
+
+### config changes
+- creeper explosions no longer break blocks. they still hurt players and mobs, and TNT and modded creepers are unchanged
+
 ## 1.0.8 (10-11-2026)
 
 ### added mods

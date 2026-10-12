@@ -1,0 +1,8 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:5",
+  "ingredient": {
+    "item": "eternal_starlight:unrealium_ingot"
+  },
+  "color": "A56BFF"
+}

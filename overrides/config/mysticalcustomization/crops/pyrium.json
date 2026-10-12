@@ -1,0 +1,8 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:4",
+  "ingredient": {
+    "item": "irons_spellbooks:pyrium_ingot"
+  },
+  "color": "E8731F"
+}

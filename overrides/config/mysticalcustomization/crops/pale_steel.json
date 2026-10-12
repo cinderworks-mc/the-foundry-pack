@@ -1,0 +1,8 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:4",
+  "ingredient": {
+    "item": "goety:pale_steel_ingot"
+  },
+  "color": "C9D6DE"
+}

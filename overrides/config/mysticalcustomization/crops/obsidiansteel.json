@@ -1,0 +1,8 @@
+{
+  "type": "mysticalagriculture:resource",
+  "tier": "mysticalagriculture:4",
+  "ingredient": {
+    "item": "forbidden_arcanus:obsidiansteel_ingot"
+  },
+  "color": "3A2D5C"
+}
