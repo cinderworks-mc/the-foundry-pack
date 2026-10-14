@@ -7,6 +7,8 @@
                                                             
 ```
 
+[![discord](https://img.shields.io/discord/1560020457363738624?label=discord&logo=discord&color=e8742a)](https://discord.gg/ZmmtPNJUcK)
+
 # the foundry
 
 modded minecraft on neoforge 1.21.1. create is the backbone, ars nouveau is the
