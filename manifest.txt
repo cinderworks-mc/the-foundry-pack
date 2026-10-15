@@ -16,7 +16,7 @@ create-big-cannons | 5.11.7 | auto
 create-deco | 2.1.3 | auto
 slice-and-dice | 4.3.4 | auto
 create-connected | 1.3.3-mc1.21.1 | auto
-create-enchantment-industry | 2.5.4 | auto
+create-enchantment-industry | 2.5.4b | auto   # 1.0.11 bump from 2.5.4
 create-jetpack | 5.2.1 | auto
 # DROPPED 08-26 (its kubejs plugin collides with kubejs-create on the ProcessingOutput wrapper, COE #170; patrick chose kubejs-create): create-ore-excavation | 1.21.1-1.6.8 | auto
 create-goggles | 6.1.1 | auto
@@ -72,7 +72,7 @@ apotheosis | 1.21.1-8.8.0 | auto   # 8.8 bump per astra pass: cannot_be_duplicat
 ## exploration
 dungeons-and-taverns | v4.4.4+mod | auto
 explorers-compass | 1.21.1-3.4.0-neoforge | auto
-artifacts | 13.2.3 | auto   # held at 13.2.3: reliquified_artifacts 1.0.8 requires artifacts 13.2.3 exactly (found 10-08 on the dev server)
+artifacts | 13.2.5 | auto   # 1.0.11 bump from 13.2.3 | held at 13.2.3: reliquified_artifacts 1.0.8 requires artifacts 13.2.3 exactly (found 10-08 on the dev server)
 relics-mod | 0.12.8 | auto
 explorify | v1.6.5 | auto
 
@@ -100,8 +100,8 @@ ribbits | 4.1.6 | auto
 almostunified | 1.21.1-1.4.2+neoforge | auto
 waystones | 21.1.46+neoforge-1.21.1 | auto
 natures-compass | 1.21.1-3.4.0-neoforge | auto
-sophisticated-backpacks | 1.21.1-3.26.9.2195 | auto
-sophisticated-storage | 1.21.1-1.6.2.2159 | auto
+sophisticated-backpacks | 1.21.1-3.26.12.2208 | auto   # 1.0.11 bump from 1.21.1-3.26.9.2195
+sophisticated-storage | 1.21.1-1.6.6.2181 | auto   # 1.0.11 bump from 1.21.1-1.6.2.2159
 curios | 9.5.1+1.21.1 | auto
 modernfix | 5.27.26+mc1.21.1 | auto   # bumped 08-30 from 5.27.20, patrick's 1.10 export
 legendary-tooltips | 1.5.5 | auto
@@ -109,7 +109,8 @@ enchantment-descriptions | 21.1.11 | auto
 lootr | 1.21.1-1.11.38.127 | auto
 appleskin | 3.0.9+mc1.21 | auto
 inventory-tweaks-refoxed | 1.21.1-1.2.0 | both   # modrinth says client-only but it registers a REQUIRED channel; server kicked the client without it (08-26)
-jei | 19.54.0.427 | auto   # .414->.427 TRIAL 09-10: aeronautics still 1.3.2, jei changelogs look routine but .423 touches render pose = mixin risk area. DEV-GATE: open a lootr chest in the dev instance before ship; fallback pin 19.50.0.414 if it crashes (the 08-29 saga)
+jei | 19.64.0.453 | auto   # 1.0.11 bump from 19.54.0.427 | .414->.427 TRIAL 09-10: aeronautics still 1.3.2, jei changelogs look routine but .423 touches render pose = mixin risk area. DEV-GATE: open a lootr chest in the dev instance before ship; fallback pin 19.50.0.414 if it crashes (the 08-29 saga)
+mezzconfig | 0.6.8 | both   # jei 19.64 REQUIRED dep (added 1.0.11 mass update), beta-only line -> allow-listed in build_pack.py
 emi | 1.1.24+1.21.1+neoforge | client   # recipe trees + bill-of-materials alongside jei (official coexistence); verify sifting recipes render before calling it default ui
 jade | 15.10.6+neoforge | auto
 # DROPPED 08-26 (patrick: not the spice of life he wanted; sol onion instead): nutriwork | 1.6.0 | datapack   # a datapack, not a mod
@@ -120,17 +121,17 @@ sodium | mc1.21.1-0.8.13-neoforge | auto
 sodium-extra | mc1.21.1-0.9.4+neoforge | auto
 lithium | mc1.21.1-0.15.4-neoforge | auto
 ferrite-core | 7.0.3-neoforge | auto
-immediatelyfast | 1.6.14+1.21.1-neoforge | auto
+immediatelyfast | 1.6.15+1.21.1-neoforge | auto   # 1.0.11 bump from 1.6.14+1.21.1-neoforge
 entityculling | 1.11.3 | auto
 moreculling | 1.0.10 | auto
-c2me-neoforge | 0.4.0-alpha.0.122+1.21.1 | auto
+c2me-neoforge | 0.4.0-alpha.0.123+1.21.1 | auto   # 1.0.11 bump from 0.4.0-alpha.0.122+1.21.1
 flerovium | 1.1.2 | auto
 badoptimizations | 2.4.1 | auto
 reeses-sodium-options | mc1.21.1-2.2.4+neoforge | auto
 
 ## vanilla+ / cozy
 quark | 4.1-487 | auto   # 4.1-487 needs neoforge >= 21.1.252 (pack on 21.1.256 since 1.0.1)
-supplementaries | 1.21.1-3.9.9 | auto
+supplementaries | 1.21.1-4.0.1 | auto   # 1.0.11 bump from 1.21.1-3.9.9
 farmers-delight | 1.21.1-1.3.4 | auto   # bumped 08-30 from 1.3.3, patrick's 1.10 export (also l_enders-cataclysm-delight's hard dep)
 miners-delight | 1.4.5 | auto
 my-nethers-delight | 1.10.4.1 | auto   # replaces nether's delight (no 1.21.1 neoforge build), patrick 08-26
@@ -138,7 +139,7 @@ ends-delight | 2.6.1+neoforge.1.21.1 | auto
 ecologics | 2.3.7-NeoForge | auto
 carry-on | 2.2.6 | auto
 controlling | 19.0.5 | auto
-starcatcher | 3.3.5.1-NEOFORGE-1.21.1 | auto
+starcatcher | 3.3.8-NEOFORGE-1.21.1 | auto   # 1.0.11 bump from 3.3.5.1-NEOFORGE-1.21.1
 productivebees | 1.21.1-13.13.0 | auto
 
 ## dependencies, not picks (required closure per modrinth, 08-26-2026)
@@ -149,7 +150,7 @@ architectury-api | 13.0.11+neoforge | auto   # pulled by: create goggles
 rechiseled | 1.2.6-neoforge-mc1.21 | auto   # pulled by: rechiseled: create
 azimuth-api | 1.4.10 | auto   # pulled by: create: bits 'n' bobs
 strut-your-stuff | 1.3.1 | auto   # pulled by: create: bits 'n' bobs
-dragonlib | 1.21.1-beta-3.0.28 | auto   # pulled by: create railways navigator
+dragonlib | 3.0.29+1.21.1-neoforge | auto   # 1.0.11 bump from 1.21.1-beta-3.0.28 | pulled by: create railways navigator
 kubejs | 2101.7.2-build.377 | auto   # pulled by: kubejs create, ponder for kubejs
 valhelsia-core | 1.1.4 | auto   # pulled by: forbidden and arcanus
 guideme | 21.1.19 | auto   # pulled by: applied energistics 2, extended ae
@@ -162,14 +163,14 @@ patchouli | 1.21.1-93-neoforge | auto   # pulled by: apotheosis
 placebo | 1.21.1-9.9.2 | auto   # pulled by: apotheosis, apothic-attributes, apothic-enchanting, apothic-spawners
 shatterbyte-lib | 0.6.2 | auto   # pulled by: relics
 balm | 21.0.66+neoforge-1.21.1 | auto   # pulled by: waystones
-sophisticated-core | 1.21.1-1.5.7.2381 | auto   # pulled by: sophisticated backpacks, sophisticated storage
+sophisticated-core | 1.21.1-1.5.12.2400 | auto   # 1.0.11 bump from 1.21.1-1.5.7.2381 | pulled by: sophisticated backpacks, sophisticated storage
 iceberg | 1.3.2 | auto   # pulled by: legendary tooltips
 prism-lib | 1.0.11 | auto   # pulled by: legendary tooltips
 bookshelf-lib | 21.1.81 | auto   # pulled by: enchantment descriptions
 prickle | 21.1.11 | auto   # pulled by: enchantment descriptions
 cloth-config | 15.0.140+neoforge | auto   # pulled by: moreculling
 zeta | 1.1-40 | auto   # pulled by: quark
-moonlight | 1.21.1-3.7.1 | auto   # pulled by: supplementaries
+moonlight | 1.21.1-3.7.2 | auto   # 1.0.11 bump from 1.21.1-3.7.1 | pulled by: supplementaries
 lodestonelib | 1.8.2 | auto   # pulled by: miner's delight
 searchables | 1.0.2 | auto   # pulled by: controlling
 fusion-connected-textures | 1.3.16-neoforge-mc1.21.1 | auto   # pulled by: rechiseled
@@ -195,7 +196,7 @@ mouse-tweaks | 1.21-2.26.1-neoforge | auto   # shift-drag / wheel item transfer;
 
 ## added 08-26-2026, patrick: sol onion replaces nutriwork; heart canisters + colorful hearts
 spice-of-life-onion | 1.5.7 | auto
-creativecore | 2.13.50 | auto
+creativecore | 2.13.51 | auto   # 1.0.11 bump from 2.13.50
 baubley-heart-canisters | 1.21.1-1.4.2 | auto
 colorful-hearts | 10.5.9 | auto
 attributefix | 21.1.3 | auto   # raises vanilla attribute caps (needed for heart canisters etc); patrick 08-26
@@ -321,7 +322,7 @@ ambientsounds | 6.3.10 | auto
 better-advancements | 0.4.3.21 | auto
 chatanimation | 1.3.4+neoforge-1.21 | auto
 clumps | 19.0.0.1 | auto
-collective | 1.21.1-8.42-fabric+forge+neo | auto
+collective | 1.21.1-8.51-fabric+forge+neo | auto   # 1.0.11 bump from 1.21.1-8.42-fabric+forge+neo
 crash-assistant | 1.11.12 | auto
 critters-and-companions | 2.7.0 | auto
 cut-through | v21.1.0-1.21.1-NeoForge | auto
@@ -339,7 +340,7 @@ reconnectible-chains | 2.4.4+1.21.1-neoforge | auto
 rightclickharvest | 4.6.1+1.21.1 | auto
 shulkerboxtooltip | 5.1.9+1.21.1-neoforge | auto
 smarter-farmers-farmers-replant | 1.21-2.2.4 | auto
-sophisticated-backpacks-create-integration | 1.21.1-0.2.2.188 | auto
+sophisticated-backpacks-create-integration | 1.21.1-0.2.3.194 | auto   # 1.0.11 bump from 1.21.1-0.2.2.188
 sound-physics-remastered | neoforge-1.21.1-1.5.1 | auto
 spark | 1.10.124-neoforge-1.21.1 | auto
 villager-names-serilum | 1.21.1-8.7-fabric+forge+neo | auto
@@ -357,7 +358,7 @@ caelus | 7.0.1+1.21.1 | auto
 coroutil | 1.21.0-1.3.8 | auto
 jamlib | 1.3.6+1.21.1 | auto
 kotlin-lang-forge | 2.15.0-k2.4.21-3.0+neoforge | auto
-puzzles-lib | 21.1.63 | auto
+puzzles-lib | 21.1.64 | auto   # 1.0.11 bump from 21.1.63
 resourceful-config | 3.0.11 | auto
 resourceful-lib | 3.0.12 | auto
 # resourcify removed 08-29-2026: standalone QoL add, not a hard dep of anything
@@ -420,7 +421,7 @@ eternal-starlight | 0.9.1+1.21.1+neoforge | auto   # new dimension
 the-bumblezone | 7.16.1+1.21.1-neoforge | auto   # new dimension
 
 ## create addons + compat (08-28-2026)
-create-central-kitchen | 2.6.2 | auto
+create-central-kitchen | 2.6.2b | auto   # 1.0.11 bump from 2.6.2
 create-stuff-and-addition-tank-fix | 1.3 | auto
 iris-flw-compat | 1.21.1+2.4.0-release | auto   # iris/flywheel render compat
 
@@ -476,10 +477,10 @@ lionfish-api | 3.1 | both   # HARD DEP of l_enders-cataclysm (export mod id: lio
 cataclysm-x-bettercombat-compat | 1.0.2 | both   # export mod id: cataclysm_compat. COMPAT ONLY, requires better-combat + cataclysm
 cataclysm-spellbooks | 1.1.11-1.21 | both   # export mod id: cataclysm_spellbooks. requires irons-spells, aces-spell-utils, azurelib, cataclysm. ALPHA-tagged -> allow-listed in build_pack.py
 l_enders-cataclysm-delight | 1.21.1-1.0.10b | both   # export mod id: lendersdelight. requires cataclysm + farmers-delight
-aces-spell-utils | 1.2.7.3-1.21.1 | both   # HARD DEP of cataclysm-spellbooks (and its own spell lib); requires irons-spells
-azurelib | 3.1.18 | both   # export mod id: azurelib-neo. HARD DEP of cataclysm-spellbooks
+aces-spell-utils | 1.2.7.4-1.21.1 | both   # 1.0.11 bump from 1.2.7.3-1.21.1 | HARD DEP of cataclysm-spellbooks (and its own spell lib); requires irons-spells
+azurelib | 3.1.19 | both   # 1.0.11 bump from 3.1.18 | export mod id: azurelib-neo. HARD DEP of cataclysm-spellbooks
 integrated-catalcysm | 1.0.6+1.21.1-neoforge | both   # export mod id: integrated_cataclysm. modrinth slug really is misspelled 'catalcysm' (found 08-30 via the export's cdn url)
-integrated-api | 1.8.2 | both   # HARD DEP of integrated-catalcysm (>=1.6.2), undeclared on modrinth; found 08-30 when the server refused to boot without it
+integrated-api | 1.9.1 | both   # 1.0.11 bump from 1.8.2 | HARD DEP of integrated-catalcysm (>=1.6.2), undeclared on modrinth; found 08-30 when the server refused to boot without it
 cataclysm-spellbooks-bettercombat-compat | 1.0.0 | both   # export mod id: cataclysmspells_compat. COMPAT ONLY (lowcodefml datapack-mod, no code), requires cataclysm-spellbooks + better-combat + irons-spells + cataclysm, all present
 apothic-category-compat | 2.1.0 | both   # export mod id: apothic_category_compat. HARD DEP apotheosis, present. modrinth flags it client-unsupported -> 'both' by the 08-30 env policy
 
@@ -517,7 +518,7 @@ trashslot | 21.1.11+neoforge-1.21.1 | both   # draggable trash slot in every inv
 ## DROPPED - together they add ~1080 sable "unknown block" errors per boot, 1053 of them
 ## for mods this pack does not even run.
 ars-energistique | 2.1.1-beta | both   # export mod id: arseng. me source cells + source<->ae energy conversion. requires ae2 + ars-nouveau, both already present. BETA-tagged -> allow-listed in build_pack.py
-reliquified-artifacts | 1.0.8 | both   # export mod id: reliquified_artifacts. relics built out of artifacts items, one curios pile instead of two. requires curios + relics-mod, already present; octolib is shatterbyte-lib's export mod id, already present; artifacts is an EXACT pin [13.2.3] - bumping artifacts stops this jar loading. BETA-tagged -> allow-listed in build_pack.py
+reliquified-artifacts | 1.0.9 | both   # 1.0.11 bump from 1.0.8 | export mod id: reliquified_artifacts. relics built out of artifacts items, one curios pile instead of two. requires curios + relics-mod, already present; octolib is shatterbyte-lib's export mod id, already present; artifacts is an EXACT pin [13.2.3] - bumping artifacts stops this jar loading. BETA-tagged -> allow-listed in build_pack.py
 
 ## four more patrick-approved for 0.2.8 (09-01-2026). cbcperipheral was in the same
 ## batch and is explicitly OUT, do not add it.
@@ -556,7 +557,7 @@ toms-peripherals | 1.21-1.3.1 | both   # cc:tweaked peripherals (printer, databa
 toms-storage | 1.21-2.4.2 | auto
 create-contraption-terminals | 1.21.1-1.4.0 | auto   # requires toms-storage (added above) + create, both present
 functional-storage | 1.21-1.5.7 | auto   # BETA-tagged -> allow-listed in build_pack.py, whole 1.21.1 line is beta. requires titanium (added below)
-titanium | 1.21-4.0.50 | auto   # BETA-tagged -> allow-listed in build_pack.py. HARD DEP of functional-storage, not one of patrick's picks
+titanium | 1.21-4.0.51 | auto   # 1.0.11 bump from 1.21-4.0.50 | BETA-tagged -> allow-listed in build_pack.py. HARD DEP of functional-storage, not one of patrick's picks
 findme | 1.21-3.3.3 | auto   # requires architectury-api, already present
 emojiful | 1.21-5.2.4 | auto   # BETA-tagged -> allow-listed in build_pack.py, no release ever cut for 1.21.1. modrinth flags client_side=required AND server_side=required (not the client-only claim it was queued under) - probed clean as a server mod, ships both like the flags say
 # DROPPED 09-02: functional-storage-create-aero | 1.21-1.0.0 | auto   # its only 1.21.1 build (1.0.0, 2026-08-21) requires functionalstorage [1.21.1-1.5.8,1.21.2), but functional-storage's newest 1.21.1 release is 1.5.7 - the project moved on to mc 26.1.2 after 1.5.7 and never cut a 1.5.8 for 1.21.1. unsatisfiable dependency, confirmed by a probe crash (ModLoader FATAL: "Mod functionalstoragecreateaero requires functionalstorage 1.21.1-1.5.8 or above", run 0.2.9-6mods-batch on hephaestus). not fixable by a version bump on our side; needs upstream to either backport or re-cut against 1.5.7.
@@ -589,6 +590,24 @@ toms-create-storage | 2.1 | resourcepack
 ## our own mod (10-07-2026): title screen prompt that walks players through the extras we can't ship in the pack
 github:cinderworks-mc/foundry-additions@v0.2.3/foundryadditions-1.21.1-0.2.3.jar | - | both
 
+## our public mods (10-15-2026): plinthworks + nullspace (needs tempad, already in the pack), straight from their github releases. both sides required.
+github:cinderworks-mc/plinthworks@v0.2.4/plinthworks-1.21.1-0.2.4.jar | - | both
+github:cinderworks-mc/nullspace@v0.1.0/nullspace-1.21.1-0.1.0.jar | - | both
+
+## added 10-15-2026: portal gun + morphing. geckolib is already above. remorphed 4.2 is from 2024-09, paired with walkers 5.8.13
+aperture-innovations | 2.1.1 | auto
+remorphed | 1.21-neoforge-4.2 | auto
+woodwalkers | 1.21-neoforge-5.8.13 | auto   # pulled by: remorphed
+crafted-core | 1.21-neoforge-5.8.2 | auto   # pulled by: woodwalkers, remorphed
+
+## added 10-15-2026: hats classic + hephaestus forge/tools, curseforge-only so they ride the extras route
+## (server-only bundles here, players install them from the in-game prompt or the /extras page). hephaestus needs athena
+## >= 4.0.0 (client side, modrinth). alltheores is optional, not added. sha512 prefixes: hats 4cd74704, forge d3c1800e, tools 44ecad5b.
+athena-ctm | 4.0.6 | auto   # pulled by: hephaestus forge + tools (client only)
+bundle:https://edge.forgecdn.net/files/8022/469/hatsneoforge-1.21.1-1.3.0.jar | 1.21.1-1.3.0 | server   # cf 1418069/8022469. beta build, mobends optional
+bundle:https://edge.forgecdn.net/files/9055/315/hephaestus-neoforge-1.21.1-1.0.12.jar | 1.0.12 | server   # cf 1542467/9055315. athena required (client)
+bundle:https://edge.forgecdn.net/files/9065/912/hephaestus_tools-neoforge-1.21.1-1.0.3.jar | 1.0.3 | server   # cf 1725286/9065912. needs hephaestus forge + athena
+
 ## server-only extras (10-07-2026): astral sorcery + its lib, straight from the author's maven.
 ## modrinth only takes cdn.modrinth.com / github / gitlab download urls, so these are env server and
 ## never enter the client mrpack. clients get them from the foundry-additions in-game extras prompt
@@ -599,7 +618,7 @@ bundle:https://maven.hellfiredev.net/hellfirepvp/observerlib/ObserverLib/1.10.3.
 ## added 10-07-2026 (patrick, 0.2.14): just another witchery remake. client=required server=required,
 ## LGPL, neoforge 1.21.1 release 0.5.13 (published 10-07, brand new, boot-test before shipping).
 ## requires curios + kotlin-for-forge (both already pinned above) and modonomicon (its guide book engine).
-just-another-witchery-remake | 0.5.13.2 | auto
+just-another-witchery-remake | 0.5.17 | auto   # 1.0.11 bump from 0.5.13.2
 modonomicon | 1.21.1-1.120.7 | auto   # pulled by: just-another-witchery-remake
 
 ## added 10-07-2026 (patrick, 0.2.14): draconic evolution, endgame tech. the 1.21.1 line is beta-only (3.1.4.633,
@@ -630,9 +649,9 @@ tropicraft | 9.8.1-1.21.1 | auto
 ## + lichdom, split out of jawr 0.5, needs witchery >= 0.5.13 so it moves in lockstep with just-another-witchery-remake),
 ## and neo vitae (blood magic port, very new, 20k downloads). occultism adds silver + iesnium ores in new chunks;
 ## familiars and rituals now exist in both jawr and occultism, judge the overlap in-game.
-occultism | 1.21.1-neoforge-1.224.4 | auto   # needs smartbrainlib (below), modonomicon/curios/geckolib already pinned
-jawr-forbidden-magic | 0.5.13 | auto   # released 10-07, ARR. LOCKSTEP with just-another-witchery-remake (witchery [0.5.13,))
-neovitae | 1.21.1-1.1.34 | auto   # modonomicon + geckolib, both pinned. third progression magic next to ars + iron's
+occultism | 1.21.1-neoforge-1.224.5 | auto   # 1.0.11 bump from 1.21.1-neoforge-1.224.4 | needs smartbrainlib (below), modonomicon/curios/geckolib already pinned
+jawr-forbidden-magic | 0.5.17 | auto   # 1.0.11 bump from 0.5.13 | released 10-07, ARR. LOCKSTEP with just-another-witchery-remake (witchery [0.5.13,))
+neovitae | 1.21.1-1.1.38 | auto   # 1.0.11 bump from 1.21.1-1.1.34 | modonomicon + geckolib, both pinned. third progression magic next to ars + iron's
 
 ## moon events: blood/harvest moons. blood moon spawn spike stacks on apotheosis world tiers + invaders, tune or disable it.
 # enhanced-celestials | 6.0.2.6-neoforge | auto   # v1, replaced by enhanced celestials 2 on 10-07 (patrick). modIds differ (enhancedcelestials vs enhancedcelestials2core) so both could load, but 2 is a rewrite of the same blood/harvest moons
@@ -670,7 +689,7 @@ mystical-agriculture | 8.0.28 | auto   # needs cucumber (below)
 
 ## libraries for the round 2 picks
 smartbrainlib | 1.16.11 | both   # pulled by: occultism. modrinth flags client unsupported, distrusted: occultism's toml requires it side=BOTH
-corgilib | 1.21.1-5.0.0.9-NeoForge | auto   # pulled by: enhanced-celestials-2-core
+corgilib | 1.21.1-5.0.0.10-NeoForge | auto   # 1.0.11 bump from 1.21.1-5.0.0.9-NeoForge | pulled by: enhanced-celestials-2-core
 data-anchor | 2.0.0.17-neoforge | auto   # pulled by: enhanced-celestials-2-core (modId dataanchor)
 cucumber | 8.0.16 | auto   # pulled by: mystical-agriculture
 
@@ -680,18 +699,18 @@ cucumber | 8.0.16 | auto   # pulled by: mystical-agriculture
 
 ## dimensions + bosses. all worldgen here only shows up in new chunks (world is pregenned to r5000).
 the-undergarden | 0.9.6 | auto   # BETA, whole 1.21.1 line is beta. 44MB. toml says minecraft "[1.21]" (exact) on every 1.21.1 build, 500k+ downloads, so it evidently loads, but watch the first boot
-aquamirae | 7.2.10 | auto   # ship graveyard + deep sea bosses. needs fragmentum (below) + geckolib (pinned). custom obscuria license, 25MB
+aquamirae | 7.2.12 | auto   # 1.0.11 bump from 7.2.10 | ship graveyard + deep sea bosses. needs fragmentum (below) + geckolib (pinned). custom obscuria license, 25MB
 goety | 3.2.0 | auto   # BOOT-TEST FIRST: every recent jar (3.1.2 -> 3.2.0) ships neoforge/minecraft versionRange="${neo_version_range}" unexpanded. maven reads a bare string as a soft "recommended" version that matches anything, so it should load, but prove it. 78MB jar. necromancy overlaps jawr-forbidden-magic's lichdom
 goety-cataclysm | 1.21.1-1.9.0 | auto   # bridge: goety [3.1.4,) + cataclysm [3.31,), both satisfied (3.2.0 / 3.33). the 1.9.0 upload's jar is named and versioned 1.8.4, upstream packaging quirk
 
 ## decor + small qol
 handcrafted | 4.0.3 | auto   # furniture you can sit/sleep on. resourceful-lib pinned. overlaps interiors, build is from 03-2025
-amendments | 1.21-2.1.10 | auto   # supplementaries' sister mod, moonlight pinned. its cauldron potion/dye mixing may fight jawr's cauldron, check in-game
+amendments | 1.21-2.1.11 | auto   # 1.0.11 bump from 1.21-2.1.10 | supplementaries' sister mod, moonlight pinned. its cauldron potion/dye mixing may fight jawr's cauldron, check in-game
 little-joys | 21.1.18+neoforge-1.21.1 | auto   # dig spots, fishing spots, fallen stars. balm pinned
 etched | 5.1.0 | auto   # burn your own records. url audio streams to every nearby player = moderation surface
 
 ## create glue
-sophisticated-storage-create-integration | 1.21.1-0.1.22.238 | auto   # NOT the newest: 0.1.22 needs sophisticatedstorage [1.6.2,), we pin 1.6.1.2147 and are not bumping it. 0.1.21's jar declares [1.5.74,) + create [6.0.7,). bump both together later
+sophisticated-storage-create-integration | 1.21.1-0.1.23.246 | auto   # 1.0.11 bump from 1.21.1-0.1.22.238 | NOT the newest: 0.1.22 needs sophisticatedstorage [1.6.2,), we pin 1.6.1.2147 and are not bumping it. 0.1.21's jar declares [1.5.74,) + create [6.0.7,). bump both together later
 create-stuff-n-additions-x-sable-aeronautics-compat | 1.0.4 | auto   # fixes grapplin + floating block crashes on sable sublevels. create_sa [2.1.4,) + sable [2.0.5,), both pinned
 create-compatible-storage | 2.13.0-mc1.21.1-neoforge | auto   # quark (etc) chests on contraptions. requires create [6.0.0,6.1.0): like structures arise, BLOCKS a create 6.1 bump
 extra-gauges | 2.1.3 | auto   # logic gauges for the factory gauge network. needs deployer (below)
@@ -700,7 +719,7 @@ extra-gauges | 2.1.3 | auto   # logic gauges for the factory gauge network. need
 industrial-foregoing | 1.21-3.6.27 | auto   # newest RELEASE (04-2025), built against titanium ~4.0.37; we run titanium 4.0.50 (functional-storage). if it throws on titanium api, 1.21-3.6.39 (beta, 07-2026) is the fallback. overlaps create/apotheosis mob + plant automation
 
 ## libraries for the round 3 picks
-fragmentum | 5.2.0 | auto   # pulled by: aquamirae (fragmentum [5.0.0,))
+fragmentum | 5.3.0 | auto   # 1.0.11 bump from 5.2.0 | pulled by: aquamirae (fragmentum [5.0.0,))
 deployer | 0.1.3 | auto   # pulled by: extra-gauges (deployer [0.1.1,1.0.0)). create: deployer api, ships compat_manager jar-in-jar. declares create_factory_logistics incompatible (not in the pack)
 
 ## added 10-07-2026 (patrick, 0.2.14 round 4): mystical agriculture + mekanism addons, research in
@@ -721,7 +740,7 @@ mekanism-additions | 10.7.19.85 | auto   # balloons, glow panels, plastic blocks
 
 ## mekanism glue + readability
 # mekanism-tfmg-compat | 0.4-1.21.1 | auto   # modrinth declares no deps; jar requires mekanism [1.21.1-10.7.15.81,) + tfmg [1.1.0,), tfmg CE 1.2.4b satisfies. dedupes lead/steel, mek starts from tfmg steel   # REMOVED for 1.0.2 (patrick 10-09): it rewrites ~76 mekanism recipes to run on tfmg steel/lead and has no config toggle. mekanism and tfmg now keep their own recipes
-mekanism-ponders | 1.0.3-1.21.1 | auto   # jarjars ponder 1.0.82 + flywheel 1.0.6, byte-identical to what create 6.0.10 bundles
+mekanism-ponders | 1.0.4-1.21.1 | auto   # 1.0.11 bump from 1.0.3-1.21.1 | jarjars ponder 1.0.82 + flywheel 1.0.6, byte-identical to what create 6.0.10 bundles
 just-enough-mekanism-multiblocks | 7.21 | auto   # client-only per modrinth (server unsupported). jei multiblock cost pages
 create-aeronautics-mekanism-compatibility | 0.1.21 | auto   # mek on sable sublevels. sable [1.2.2,) + mekanism [10.7.19,). open #11: client crash with mek pipes on contraptions, keep them off ships
 applied-mekanistics | 1.6.3 | auto   # mek chemicals in ME. ae2 [19.2.10,20) + mekanism [10.7.14,11)
@@ -734,7 +753,7 @@ ars-mekanica | 1.3.0+neoforge-1.21.1 | auto   # source dynamo (source -> FE). mo
 ## airships. atm10a runs these without sable_beyond + sablecompat, so the trio vs those two is unprobed: boot-test before shipping.
 create-propulsion-simulated | 1.1.5 | auto   # thrusters + propellers, sable-native. modrinth declares no deps; jar needs create [6.0.6,) + sable [2.0.3,) + sablecompanion *, which sable 2.0.6 jarjars (1.6.0, sable itself rejects >1.6.0)
 create-aeroworks | 1.5.0+mc1.21.1 | auto   # gyroscope, joystick, flight controls. create [6.0.0,) + sable [1.1.0,). custom license
-create-aeronautics-gadgets-and-gizmos | 1.2.7 | auto   # bundled jar: jarjars createthrusters + gadgetsngizmos 1.2.7. needs create [6.0.10,) (exactly our pin, a create downgrade breaks it), aeronautics + simulated [1.2.1,) (aeronautics 1.3.2 ships both), sable [2.0.3,), flywheel [1.0.6,2.0) client (create's). ARR. a 2.0.0 beta line exists, not taken
+create-aeronautics-gadgets-and-gizmos | 1.2.10 | auto   # 1.0.11 bump from 1.2.7 | bundled jar: jarjars createthrusters + gadgetsngizmos 1.2.7. needs create [6.0.10,) (exactly our pin, a create downgrade breaks it), aeronautics + simulated [1.2.1,) (aeronautics 1.3.2 ships both), sable [2.0.3,), flywheel [1.0.6,2.0) client (create's). ARR. a 2.0.0 beta line exists, not taken
 mss-moogs-soaring-structures | 2.2.0 | auto   # floating islands with loot, somewhere to fly to. modrinth says server-only, builder ships clients an optional copy. new chunks only (world pregenned to r5000). needs moogs-structure-lib (below)
 
 ## magic + tech
@@ -745,7 +764,7 @@ oritech | 1.2.13 | auto   # animated machines, lasers, mechs. architectury [13.0
 
 ## qol + logistics
 akashic-tome | 1.21.1-1.8-30 | auto   # one book holds every guide book. no deps. CC-BY-NC-SA
-sophisticated-item-actions | 1.21.1-0.5.16.423 | auto   # highlight/restock from nearby inventories. modrinth says sophisticated-core (pinned 1.5.5, newer than this build); toml requires only neoforge [21.1.229,). ARR
+sophisticated-item-actions | 1.21.1-0.5.17.435 | auto   # 1.0.11 bump from 1.21.1-0.5.16.423 | highlight/restock from nearby inventories. modrinth says sophisticated-core (pinned 1.5.5, newer than this build); toml requires only neoforge [21.1.229,). ARR
 super-factory-manager | 4.34.0 | auto   # scripted logistics. no deps. MPL-2.0
 
 ## dimensions + creatures
@@ -875,4 +894,11 @@ ae2-lightning-tech | 2.1.2-beta3 | auto
 ## both release builds, no other dependencies, both sides.
 create-bionics | 2.5.0 | auto
 # envelope | 0.7.5 | auto   # REMOVED 10-12-2026 (1.0.10): its jei.BasicRecipeTransferHandlerMixin fails to apply against jei 19.54.0.427 and crashes every client on world join
+
+## added 10-12-2026 (patrick, 1.0.11): ae infinity booster 1.21.1-1.0.0.58 (07-2026), infinite range card and dimension card for ae2 wireless. LGPL, release build, needs only ae2. both sides.
+aeinfinitybooster | 1.21.1-1.0.0.58 | auto
+
+## added 10-12-2026 (patrick, 1.0.11): cable facades 2.1.4 (08-2026), facades for pipez, mekanism cables and other pipe blocks (list is configurable in cable_facades-common.toml
+## and the #cable_facades:supports_facade tag). MIT, release build, only jei optional. both sides.
+cable-facades | 2.1.4 | auto
 

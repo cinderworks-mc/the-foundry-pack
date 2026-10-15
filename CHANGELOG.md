@@ -7,6 +7,22 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 1.0.11 (10-15-2026)
+
+### added mods
+- AE Infinity Booster: infinite range and dimension cards for AE2 wireless access, so terminals work across any distance and between dimensions
+- Cable Facades: cover pipes and cables (Pipez, Mekanism and more) with facades so they blend into walls
+- Plinthworks: pedestals you teach with sigils to move items, energy, fluids and xp, with filters, upgrades and linked channels, all on one screen
+- Nullspace: a tempad addon that gives every player a pocket workshop room that grows as you feed it, with guests, free shell painting and a waypoint hall
+- Aperture Innovations: a portal gun with linked portals you place on surfaces
+- ReMorphed: take the shape of mobs you have killed and use their abilities, with Walkers and Crafted Core as its libraries
+- Hats (Classic): cosmetic hats with a selection screen. curseforge only, install it from the title screen prompt or the extras page
+- Hephaestus Forge: build tools and weapons from parts at a forge. curseforge only, install it from the title screen prompt or the extras page, Athena comes along as its library
+- Hephaestus Tools: the tool and weapon parts for the forge. curseforge only, install it from the title screen prompt or the extras page
+
+### added features
+- Sealed Claymore, Sword and Rapier relics no longer block nether and other dimension travel when worn in a curio slot (workaround for an upstream bug in the Reliquified Iron's Spells addon)
+
 ## 1.0.10 (10-12-2026)
 
 ### removed mods
