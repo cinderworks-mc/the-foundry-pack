@@ -305,8 +305,8 @@ better-combat | 2.4.0+1.21.1-neoforge | auto
 
 ## essentials-style / cosmetics
 auth-me | v9.0.1+1.21.1 | auto
-essential | 1.5.0.1 | auto
-essential-patcher | 1.0.8 | client   # modrinth flags are 'unknown' both sides; description confirms client-only (controls Essential's ads/purchase-prompts/telemetry)
+# essential | 1.5.0.1 | auto   # REMOVED for 1.0.12 (patrick 10-15-2026): a fresh install pulls the newest Essential (1.5.1), and essential-patcher (1.0.8 and 1.0.9) calls gg.essential.event.sps.SPSStartEvent, which Essential 1.5.x no longer has, so mod construction failed and every new player crashed on launch. revisit when the patcher supports the current Essential
+# essential-patcher | 1.0.8 | client   # modrinth flags are 'unknown' both sides; description confirms client-only (controls Essential's ads/purchase-prompts/telemetry)   # REMOVED for 1.0.12, see essential above
 craftpresence | 2.7.1+1.21.1-neoforge | client   # discord rich presence: "Cinder Works - The Foundry". overrides/config/craftpresence.json + overrides/essential/config.toml (disables Essential's own presence so they don't fight the Discord pipe). custom flame icon pending a Cinder Works Discord app (swap generalSettings.clientId + largeImageKey)
 unilib | 1.2.1+1.21.1-neoforge | client   # hard dep of craftpresence 2.7+ (split out upstream) - found missing at rc1 test 09-10
 

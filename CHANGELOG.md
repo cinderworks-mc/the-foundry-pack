@@ -7,6 +7,11 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 1.0.12 (10-15-2026)
+
+### removed mods
+- Essential and Essential Patcher: new installs crashed on launch because the patcher needs something the current Essential no longer has. everyone should update, and anyone who already has them can delete Essential and essentialpatcher from the mods folder
+
 ## 1.0.11 (10-15-2026)
 
 ### added mods
