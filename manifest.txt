@@ -824,12 +824,12 @@ aaron | 1.21.0-build.39 | auto   # pulled by: excessive-utilities (aaron [1.21,)
 ## many farmer's delight addons.
 cooking-for-blockheads | 21.1.24+neoforge-1.21.1 | auto
 
-## added 10-08-2026 (patrick): thaumaturge 1.0.2 for 1.21.1. curseforge only has 26.1.2 files, the author posted the 1.21.1 build
+## added 10-08-2026 (patrick): thaumaturge for 1.21.1, bumped to 1.0.3 on 10-16-2026. curseforge only has 26.1.2 files, the author posted the 1.21.1 build
 ## for testing and approved it for players and servers. all rights reserved, so it is not in the mrpack: the server gets it through
 ## this bundle line, players through the extras screen, both from a private host. swap to the curseforge file when it is posted.
 ## needs lithostitched >= 1.8.0 (below, both sides, thaumaturge declares it BOTH), curios pinned.
 lithostitched | 1.8.0-neoforge-21.1 | both   # required by thaumaturge. MIT
-bundle:${PRIVATE_DL}/thaumaturge-1.21.1-NeoForge-1.0.2.jar | 1.0.2 | server
+bundle:${PRIVATE_DL}/thaumaturge-1.21.1-NeoForge-1.0.3.jar | 1.0.3 | server
 
 bundle:https://edge.forgecdn.net/files/8231/400/ftb-ultimine-neoforge-2101.1.15.jar | 2101.1.15 | server   # ftb ultimine, replaces veinminer
 

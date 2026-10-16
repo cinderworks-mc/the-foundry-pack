@@ -7,6 +7,11 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 1.0.13 (10-16-2026)
+
+### config changes
+- Thaumaturge: updated to the author's 1.0.3 test build, on the server too. the title screen prompt and the extras page now offer the new jar
+
 ## 1.0.12 (10-15-2026)
 
 ### removed mods
