@@ -559,7 +559,7 @@ create-contraption-terminals | 1.21.1-1.4.0 | auto   # requires toms-storage (ad
 functional-storage | 1.21-1.5.7 | auto   # BETA-tagged -> allow-listed in build_pack.py, whole 1.21.1 line is beta. requires titanium (added below)
 titanium | 1.21-4.0.51 | auto   # 1.0.11 bump from 1.21-4.0.50 | BETA-tagged -> allow-listed in build_pack.py. HARD DEP of functional-storage, not one of patrick's picks
 findme | 1.21-3.3.3 | auto   # requires architectury-api, already present
-emojiful | 1.21-5.2.4 | auto   # BETA-tagged -> allow-listed in build_pack.py, no release ever cut for 1.21.1. modrinth flags client_side=required AND server_side=required (not the client-only claim it was queued under) - probed clean as a server mod, ships both like the flags say
+# DROPPED 10-17-2026 (patrick, 1.0.14): twemoji replaces it, both render :shortcodes: in the same chat path. rollback line: emojiful | 1.21-5.2.4 | auto   # BETA-tagged, allow-listed in build_pack.py, modrinth flags both sides
 # DROPPED 09-02: functional-storage-create-aero | 1.21-1.0.0 | auto   # its only 1.21.1 build (1.0.0, 2026-08-21) requires functionalstorage [1.21.1-1.5.8,1.21.2), but functional-storage's newest 1.21.1 release is 1.5.7 - the project moved on to mc 26.1.2 after 1.5.7 and never cut a 1.5.8 for 1.21.1. unsatisfiable dependency, confirmed by a probe crash (ModLoader FATAL: "Mod functionalstoragecreateaero requires functionalstorage 1.21.1-1.5.8 or above", run 0.2.9-6mods-batch on hephaestus). not fixable by a version bump on our side; needs upstream to either backport or re-cut against 1.5.7.
 
 ## client atmosphere, 09-02-2026 (patrick's pick, folded in from the 0.2.9 queue)
@@ -901,4 +901,39 @@ aeinfinitybooster | 1.21.1-1.0.0.58 | auto
 ## added 10-12-2026 (patrick, 1.0.11): cable facades 2.1.4 (08-2026), facades for pipez, mekanism cables and other pipe blocks (list is configurable in cable_facades-common.toml
 ## and the #cable_facades:supports_facade tag). MIT, release build, only jei optional. both sides.
 cable-facades | 2.1.4 | auto
+
+## added 10-17-2026 (patrick, 1.0.14): five links, details in notes/1.0.14-draft.md.
+
+## enigmatic legacy+ 1.21.1-1.1.2 (10-11-2026 release), unofficial 1.21 port of enigmatic legacy (auviotre, original by aizistral).
+## license: enigmatic legacy license ii (read 10-17): unmodified redistribution is allowed if it credits aizistral as owner, links the
+## official source and is non-commercial (iv.2). the mrpack only references modrinth's own cdn copy, so we redistribute nothing anyway.
+## needs curios + patchouli + caelus (jar toml, the 1.1.2 upload declares none on modrinth), all three pinned above. neoforge >= 21.1.224.
+## both: registers its own payloads, items, curio slots, worldgen (etherium ore, spellstone hut) and 42 loot modifiers. the 1.1.2
+## dedicated-server crash (github #50) is fixed in this upload (checked in the jar). server config notes in the draft doc.
+enigmaticlegacy-plus | 1.21.1-1.1.2 | both
+
+## chisel modern 1.4.1 + ctm 1.2.1, curseforge only, so they ride the extras route like twilight forest (server-only bundles here,
+## players install them from the in-game prompt or the /extras page). chisel: jar says mit, curseforge page says gplv2, either way
+## server use is fine. needs ctm [1.2.1,) both sides (curseforge only too, gpl-2.0) and baguettelib [1.1.4,) (pinned above, 2.0.7).
+## chisel registers payloads, so players without the extras jars cannot join once these are on the server (same as every extra).
+## sha512 prefixes: chisel a07d9a04, ctm 551e6593.
+bundle:https://edge.forgecdn.net/files/8780/15/chisel-1.21.1-NeoForge-1.4.1.jar | 1.4.1 | server   # cf 1392308/8780015. marble/limestone/diabase ore gen in new chunks
+bundle:https://edge.forgecdn.net/files/5587/515/CTM-1.21-1.2.1%2B3.jar | 1.21-1.2.1+3 | server   # cf 267602/5587515. required by chisel modern
+
+## applied thaumaturge 1.0.0-BETA (cf 1718689/9114162, the ONLY 1.21.1 file, the 1.0.0 release and 1.0.8-alpha are 26.1.2). mit per jar.
+## HELD, not live in this draft: it was compiled against thaumaturge 1.0.2, and the pack ships 1.0.3. three calls it makes are gone in
+## 1.0.3 (WandVisHelper.consumeAllVisRaw, ArcaneCraftingTransaction.craft(...,boolean), IVisRelaySource.drainCentivis(...,boolean)),
+## and the arcane assembler hits one from its ae2 grid tick. wait for a build against thaumaturge 1.0.3, then re-run the ref check.
+## ae2 [19.2.17,20) ok with 19.2.18, ae2wtlib optional ok with 19.5.1. sha512 prefix c982afab.
+# bundle:https://edge.forgecdn.net/files/9114/162/appliedthaumaturge-1.0.0-BETA.jar | 1.0.0-BETA | server   # cf 1718689/9114162
+
+## keymap [maintained] 0.11.3 (10-04-2026), visual keybind screen with a virtual keyboard. isc. modrinth side flags are 'unknown',
+## the jar is client only (every dependency and mixin is CLIENT, no payloads). no deps in 0.11.3. coexists with controlling: keymap takes
+## over options > controls > key binds, its 'vanilla keybinds' button opens the vanilla screen, which controlling then swaps for its own.
+keymap-maintained | 0.11.3 | client
+
+## twemoji 1.1.0 (09-07-2026), pixel twemoji in chat with a picker and shortcodes. all rights reserved, referenced from modrinth's cdn
+## like every other arr mod in the pack. both: it registers (optional) server->client emoji sync payloads and a server command, and the
+## author says both (github #3). needs baguettelib [2.0.5,) + yacl [3.8.1,) (client), both pinned above. replaces emojiful (dropped above, 1.0.14).
+twemoji | 1.1.0 | both
 

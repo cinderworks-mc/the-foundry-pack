@@ -7,6 +7,23 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 1.0.14 (10-17-2026)
+
+### added mods
+- Enigmatic Legacy+: rings, charms, scrolls and spellstones to find and earn, a port of Aizistral's Enigmatic Legacy
+- Chisel Modern: the classic chisel, hundreds of decorative block variants from one tool. curseforge only, install it from the title screen prompt or the extras page, ConnectedTexturesMod comes with it
+- Twemoji: pixel emojis in chat, with a picker and :shortcodes:
+- Keymap: a visual keybind screen that shows what every key does
+
+### removed mods
+- Emojiful: Twemoji replaces it. :shortcodes: keep working, they just look like pixel emojis now
+
+### config changes
+- the 27 extra Mystical Agriculture crops now show their real names instead of raw keys
+
+### heads up
+- Chisel Modern and ConnectedTexturesMod are on the server, so you need both from the extras before you can join
+
 ## 1.0.13 (10-16-2026)
 
 ### config changes
