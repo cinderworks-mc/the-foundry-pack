@@ -7,6 +7,35 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 1.0.15 (10-22-2026)
+
+### updated mods
+- Thaumaturge
+- Plinthworks
+- Nullspace
+- Sophisticated Backpacks
+- Sophisticated Storage
+- Sophisticated Core
+- Sophisticated Item Actions
+- Supplementaries
+- Aquamirae
+- Starcatcher
+- The Bumblezone
+- Create Compatible Storage
+- Collective
+- Villager Names
+- Lithostitched
+- Fragmentum
+- Advanced Loot Info
+- Advanced Core Info
+- Ambient Sounds
+- Chat Animation
+- Sound Physics Remastered
+- MakeUp Ultra Fast
+- Whimscape
+- Trash Cans
+- Puzzles Lib
+
 ## 1.0.14 (10-17-2026)
 
 ### added mods

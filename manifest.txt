@@ -100,8 +100,8 @@ ribbits | 4.1.6 | auto
 almostunified | 1.21.1-1.4.2+neoforge | auto
 waystones | 21.1.46+neoforge-1.21.1 | auto
 natures-compass | 1.21.1-3.4.0-neoforge | auto
-sophisticated-backpacks | 1.21.1-3.26.12.2208 | auto   # 1.0.11 bump from 1.21.1-3.26.9.2195
-sophisticated-storage | 1.21.1-1.6.6.2181 | auto   # 1.0.11 bump from 1.21.1-1.6.2.2159
+sophisticated-backpacks | 1.21.1-3.26.14.2222 | auto   # 1.0.15 bump from 1.21.1-3.26.12.2208
+sophisticated-storage | 1.21.1-1.6.8.2196 | auto   # 1.0.15 bump from 1.21.1-1.6.6.2181
 curios | 9.5.1+1.21.1 | auto
 modernfix | 5.27.26+mc1.21.1 | auto   # bumped 08-30 from 5.27.20, patrick's 1.10 export
 legendary-tooltips | 1.5.5 | auto
@@ -131,7 +131,7 @@ reeses-sodium-options | mc1.21.1-2.2.4+neoforge | auto
 
 ## vanilla+ / cozy
 quark | 4.1-487 | auto   # 4.1-487 needs neoforge >= 21.1.252 (pack on 21.1.256 since 1.0.1)
-supplementaries | 1.21.1-4.0.1 | auto   # 1.0.11 bump from 1.21.1-3.9.9
+supplementaries | 1.21.1-4.0.2 | auto   # 1.0.15 bump from 1.21.1-4.0.1
 farmers-delight | 1.21.1-1.3.4 | auto   # bumped 08-30 from 1.3.3, patrick's 1.10 export (also l_enders-cataclysm-delight's hard dep)
 miners-delight | 1.4.5 | auto
 my-nethers-delight | 1.10.4.1 | auto   # replaces nether's delight (no 1.21.1 neoforge build), patrick 08-26
@@ -139,7 +139,7 @@ ends-delight | 2.6.1+neoforge.1.21.1 | auto
 ecologics | 2.3.7-NeoForge | auto
 carry-on | 2.2.6 | auto
 controlling | 19.0.5 | auto
-starcatcher | 3.3.8-NEOFORGE-1.21.1 | auto   # 1.0.11 bump from 3.3.5.1-NEOFORGE-1.21.1
+starcatcher | 3.3.10-NEOFORGE-1.21.1 | auto   # 1.0.15 bump from 3.3.8-NEOFORGE-1.21.1
 productivebees | 1.21.1-13.13.0 | auto
 
 ## dependencies, not picks (required closure per modrinth, 08-26-2026)
@@ -163,7 +163,7 @@ patchouli | 1.21.1-93-neoforge | auto   # pulled by: apotheosis
 placebo | 1.21.1-9.9.2 | auto   # pulled by: apotheosis, apothic-attributes, apothic-enchanting, apothic-spawners
 shatterbyte-lib | 0.6.2 | auto   # pulled by: relics
 balm | 21.0.66+neoforge-1.21.1 | auto   # pulled by: waystones
-sophisticated-core | 1.21.1-1.5.12.2400 | auto   # 1.0.11 bump from 1.21.1-1.5.7.2381 | pulled by: sophisticated backpacks, sophisticated storage
+sophisticated-core | 1.21.1-1.5.17.2426 | auto   # 1.0.15 bump from 1.21.1-1.5.12.2400 | pulled by: sophisticated backpacks, sophisticated storage
 iceberg | 1.3.2 | auto   # pulled by: legendary tooltips
 prism-lib | 1.0.11 | auto   # pulled by: legendary tooltips
 bookshelf-lib | 21.1.81 | auto   # pulled by: enchantment descriptions
@@ -210,7 +210,7 @@ corail-tombstone | neoforge-1.21.1-9.5.6 | auto   # graves; picked over gravesto
 minemath | 3.0.0-1.21.1 | client   # gui calculator window, client only, zero deps. patrick: "need to do stack math". /calc in kubejs is the chat version
 
 ## shaders (08-26-2026) - same three as the hearth client pack, cdn references only, never bundled
-makeup-ultra-fast-shaders | 9.5g | shader
+makeup-ultra-fast-shaders | 9.6 | shader   # 1.0.15 bump from 9.5g
 complementary-reimagined | r5.9.3 | shader
 complementary-unbound | r5.9.3 | shader   # patrick 08-26: reimagined + unbound, sildur's dropped (its extreme-vl file is gone from modrinth)
 euphoria-patches | 1.10.5-r5.9.3-neoforge | auto   # add-on for complementary reimagined; lockstep: bump complementary -> bump this to the matching r-version
@@ -318,11 +318,11 @@ unilib | 1.2.1+1.21.1-neoforge | client   # hard dep of craftpresence 2.7+ (spli
 # veinminer-enchantment | 2.11.2 | auto
 
 ## qol / visual / audio
-ambientsounds | 6.3.10 | auto
+ambientsounds | 6.3.11 | auto   # 1.0.15 bump from 6.3.10
 better-advancements | 0.4.3.21 | auto
-chatanimation | 1.3.4+neoforge-1.21 | auto
+chatanimation | 1.3.5+neoforge-1.21 | auto   # 1.0.15 bump from 1.3.4+neoforge-1.21
 clumps | 19.0.0.1 | auto
-collective | 1.21.1-8.51-fabric+forge+neo | auto   # 1.0.11 bump from 1.21.1-8.42-fabric+forge+neo
+collective | 1.21.1-8.64-fabric+forge+neo | auto   # 1.0.15 bump from 1.21.1-8.51-fabric+forge+neo
 crash-assistant | 1.11.12 | auto
 critters-and-companions | 2.7.0 | auto
 cut-through | v21.1.0-1.21.1-NeoForge | auto
@@ -341,9 +341,9 @@ rightclickharvest | 4.6.1+1.21.1 | auto
 shulkerboxtooltip | 5.1.9+1.21.1-neoforge | auto
 smarter-farmers-farmers-replant | 1.21-2.2.4 | auto
 sophisticated-backpacks-create-integration | 1.21.1-0.2.3.194 | auto   # 1.0.11 bump from 1.21.1-0.2.2.188
-sound-physics-remastered | neoforge-1.21.1-1.5.1 | auto
+sound-physics-remastered | neoforge-1.21.1-1.5.2 | auto   # 1.0.15 bump from neoforge-1.21.1-1.5.1
 spark | 1.10.124-neoforge-1.21.1 | auto
-villager-names-serilum | 1.21.1-8.7-fabric+forge+neo | auto
+villager-names-serilum | 1.21.1-8.9-fabric+forge+neo | auto   # 1.0.15 bump from 1.21.1-8.7-fabric+forge+neo
 # 08-28: briefly suspected watut of the boot crash (looked like a genuine
 # ShaderInstanceBlur/particle.json bug, even named in the crash report's own
 # "Suspected Mods" line) - false lead, confirmed working once the real cause
@@ -358,7 +358,7 @@ caelus | 7.0.1+1.21.1 | auto
 coroutil | 1.21.0-1.3.8 | auto
 jamlib | 1.3.6+1.21.1 | auto
 kotlin-lang-forge | 2.15.0-k2.4.21-3.0+neoforge | auto
-puzzles-lib | 21.1.64 | auto   # 1.0.11 bump from 21.1.63
+puzzles-lib | 21.1.65 | auto   # 1.0.15 bump from 21.1.64
 resourceful-config | 3.0.11 | auto
 resourceful-lib | 3.0.12 | auto
 # resourcify removed 08-29-2026: standalone QoL add, not a hard dep of anything
@@ -373,7 +373,7 @@ chunky | 1.4.23 | server   # pregen only, server-side utility
 
 ## resourcepacks (08-28-2026) - whimscape variants are optional (not in default
 ## enabled order below), rest ship enabled by default via default-options.
-whimscape | 1.20.2-1.21.11_r6 | resourcepack
+whimscape | 1.20.2-1.21.11_r7 | resourcepack   # 1.0.15 bump from 1.20.2-1.21.11_r6
 whimscape-x-fresh-animations | 1.20-1.21.11_r3 | resourcepack
 whimscape-exploration | 2.1 | resourcepack
 # fresh-animations-extensions (FA+All_Extensions) removed 08-30-2026: it is just
@@ -418,7 +418,7 @@ incendium | 5.4.4 | auto   # nether overhaul, alpha-only line
 # structory | 1.3.17 | auto
 # structory-towers | 1.0.17 | auto
 eternal-starlight | 0.9.1+1.21.1+neoforge | auto   # new dimension
-the-bumblezone | 7.16.1+1.21.1-neoforge | auto   # new dimension
+the-bumblezone | 7.17.0+1.21.1-neoforge | auto   # 1.0.15 bump from 7.16.1+1.21.1-neoforge | new dimension
 
 ## create addons + compat (08-28-2026)
 create-central-kitchen | 2.6.2b | auto   # 1.0.11 bump from 2.6.2
@@ -495,7 +495,7 @@ alternate-current | neoforge-mc1.21-1.9.0 | both   # 08-30: both by policy (clie
 baguettelib | 2.0.7 | both   # 08-30: was server-only per modrinth flags, but it opens a network channel the client must answer ("channel missing on the client side"); ships to clients too
 comforts | 9.0.5+1.21.1 | both   # sleeping bags + hammocks
 runelic | 21.1.5 | both   # readable galactic/enchanting font; requires prickle + bookshelf-lib, both present
-trash-cans | 1.1.1-neoforge-mc1.21 | both   # export mod id: trashcans. placeable void block, NOT the ftb /trashcan popup
+trash-cans | 1.1.2-neoforge-mc1.21 | both   # 1.0.15 bump from 1.1.1-neoforge-mc1.21 | export mod id: trashcans. placeable void block, NOT the ftb /trashcan popup
 applied-energistics-2-wireless-terminals | 19.5.1 | both   # export mod id: ae2wtlib
 create-mechanical-extruder | 1.21.1-2.2.2-6.0.10 | both   # export mod id: create_mechanical_extruder
 
@@ -591,8 +591,8 @@ toms-create-storage | 2.1 | resourcepack
 github:cinderworks-mc/foundry-additions@v0.2.3/foundryadditions-1.21.1-0.2.3.jar | - | both
 
 ## our public mods (10-15-2026): plinthworks + nullspace (needs tempad, already in the pack), straight from their github releases. both sides required.
-github:cinderworks-mc/plinthworks@v0.2.4/plinthworks-1.21.1-0.2.4.jar | - | both
-github:cinderworks-mc/nullspace@v0.1.0/nullspace-1.21.1-0.1.0.jar | - | both
+github:cinderworks-mc/plinthworks@v0.2.5/plinthworks-1.21.1-0.2.5.jar | - | both
+github:cinderworks-mc/nullspace@v0.1.3/nullspace-1.21.1-0.1.3.jar | - | both
 
 ## added 10-15-2026: portal gun + morphing. geckolib is already above. remorphed 4.2 is from 2024-09, paired with walkers 5.8.13
 aperture-innovations | 2.1.1 | auto
@@ -699,7 +699,7 @@ cucumber | 8.0.16 | auto   # pulled by: mystical-agriculture
 
 ## dimensions + bosses. all worldgen here only shows up in new chunks (world is pregenned to r5000).
 the-undergarden | 0.9.6 | auto   # BETA, whole 1.21.1 line is beta. 44MB. toml says minecraft "[1.21]" (exact) on every 1.21.1 build, 500k+ downloads, so it evidently loads, but watch the first boot
-aquamirae | 7.2.12 | auto   # 1.0.11 bump from 7.2.10 | ship graveyard + deep sea bosses. needs fragmentum (below) + geckolib (pinned). custom obscuria license, 25MB
+aquamirae | 7.2.13 | auto   # 1.0.15 bump from 7.2.12 | ship graveyard + deep sea bosses. needs fragmentum (below) + geckolib (pinned). custom obscuria license, 25MB
 goety | 3.2.0 | auto   # BOOT-TEST FIRST: every recent jar (3.1.2 -> 3.2.0) ships neoforge/minecraft versionRange="${neo_version_range}" unexpanded. maven reads a bare string as a soft "recommended" version that matches anything, so it should load, but prove it. 78MB jar. necromancy overlaps jawr-forbidden-magic's lichdom
 goety-cataclysm | 1.21.1-1.9.0 | auto   # bridge: goety [3.1.4,) + cataclysm [3.31,), both satisfied (3.2.0 / 3.33). the 1.9.0 upload's jar is named and versioned 1.8.4, upstream packaging quirk
 
@@ -712,14 +712,14 @@ etched | 5.1.0 | auto   # burn your own records. url audio streams to every near
 ## create glue
 sophisticated-storage-create-integration | 1.21.1-0.1.23.246 | auto   # 1.0.11 bump from 1.21.1-0.1.22.238 | NOT the newest: 0.1.22 needs sophisticatedstorage [1.6.2,), we pin 1.6.1.2147 and are not bumping it. 0.1.21's jar declares [1.5.74,) + create [6.0.7,). bump both together later
 create-stuff-n-additions-x-sable-aeronautics-compat | 1.0.4 | auto   # fixes grapplin + floating block crashes on sable sublevels. create_sa [2.1.4,) + sable [2.0.5,), both pinned
-create-compatible-storage | 2.13.0-mc1.21.1-neoforge | auto   # quark (etc) chests on contraptions. requires create [6.0.0,6.1.0): like structures arise, BLOCKS a create 6.1 bump
+create-compatible-storage | 2.14.0-mc1.21.1-neoforge | auto   # 1.0.15 bump from 2.13.0-mc1.21.1-neoforge | quark (etc) chests on contraptions. requires create [6.0.0,6.1.0): like structures arise, BLOCKS a create 6.1 bump
 extra-gauges | 2.1.3 | auto   # logic gauges for the factory gauge network. needs deployer (below)
 
 ## tech
 industrial-foregoing | 1.21-3.6.27 | auto   # newest RELEASE (04-2025), built against titanium ~4.0.37; we run titanium 4.0.50 (functional-storage). if it throws on titanium api, 1.21-3.6.39 (beta, 07-2026) is the fallback. overlaps create/apotheosis mob + plant automation
 
 ## libraries for the round 3 picks
-fragmentum | 5.3.0 | auto   # 1.0.11 bump from 5.2.0 | pulled by: aquamirae (fragmentum [5.0.0,))
+fragmentum | 5.4.0 | auto   # 1.0.15 bump from 5.3.0 | pulled by: aquamirae (fragmentum [5.0.0,))
 deployer | 0.1.3 | auto   # pulled by: extra-gauges (deployer [0.1.1,1.0.0)). create: deployer api, ships compat_manager jar-in-jar. declares create_factory_logistics incompatible (not in the pack)
 
 ## added 10-07-2026 (patrick, 0.2.14 round 4): mystical agriculture + mekanism addons, research in
@@ -764,7 +764,7 @@ oritech | 1.2.13 | auto   # animated machines, lasers, mechs. architectury [13.0
 
 ## qol + logistics
 akashic-tome | 1.21.1-1.8-30 | auto   # one book holds every guide book. no deps. CC-BY-NC-SA
-sophisticated-item-actions | 1.21.1-0.5.17.435 | auto   # 1.0.11 bump from 1.21.1-0.5.16.423 | highlight/restock from nearby inventories. modrinth says sophisticated-core (pinned 1.5.5, newer than this build); toml requires only neoforge [21.1.229,). ARR
+sophisticated-item-actions | 1.21.1-0.5.18.441 | auto   # 1.0.15 bump from 1.21.1-0.5.17.435 | highlight/restock from nearby inventories. modrinth says sophisticated-core (pinned 1.5.5, newer than this build); toml requires only neoforge [21.1.229,). ARR
 super-factory-manager | 4.34.0 | auto   # scripted logistics. no deps. MPL-2.0
 
 ## dimensions + creatures
@@ -824,12 +824,12 @@ aaron | 1.21.0-build.39 | auto   # pulled by: excessive-utilities (aaron [1.21,)
 ## many farmer's delight addons.
 cooking-for-blockheads | 21.1.24+neoforge-1.21.1 | auto
 
-## added 10-08-2026 (patrick): thaumaturge for 1.21.1, bumped to 1.0.3 on 10-16-2026. curseforge only has 26.1.2 files, the author posted the 1.21.1 build
+## added 10-08-2026 (patrick): thaumaturge for 1.21.1, bumped to 1.0.3 on 10-16-2026, to 1.0.6 on 10-22-2026. curseforge only has 26.1.2 files, the author posted the 1.21.1 build
 ## for testing and approved it for players and servers. all rights reserved, so it is not in the mrpack: the server gets it through
 ## this bundle line, players through the extras screen, both from a private host. swap to the curseforge file when it is posted.
 ## needs lithostitched >= 1.8.0 (below, both sides, thaumaturge declares it BOTH), curios pinned.
-lithostitched | 1.8.0-neoforge-21.1 | both   # required by thaumaturge. MIT
-bundle:${PRIVATE_DL}/thaumaturge-1.21.1-NeoForge-1.0.3.jar | 1.0.3 | server
+lithostitched | 1.8.1-neoforge-21.1 | both   # 1.0.15 bump from 1.8.0-neoforge-21.1 | required by thaumaturge. MIT
+bundle:${PRIVATE_DL}/thaumaturge-1.21.1-NeoForge-1.0.6.jar | 1.0.6 | server
 
 bundle:https://edge.forgecdn.net/files/8231/400/ftb-ultimine-neoforge-2101.1.15.jar | 2101.1.15 | server   # ftb ultimine, replaces veinminer
 
@@ -861,8 +861,8 @@ emi-enchanting | 0.1.2+1.21+neoforge | auto
 emi-ores | 1.3+1.21.1+neoforge | auto
 extra-mod-integrations | 1.0.3+1.21.1.neoforge | auto
 justenoughbreeding | 3.3.1 | auto
-advanced-core-info | 1.21.1-1.4.0 | auto
-advanced-loot-info | 1.21.1-2.4.0 | auto
+advanced-core-info | 1.21.1-1.5.0 | auto   # 1.0.15 bump from 1.21.1-1.4.0
+advanced-loot-info | 1.21.1-2.5.0 | auto   # 1.0.15 bump from 1.21.1-2.4.0
 
 ## added 10-11-2026 (patrick, 1.0.6): jei-worldgen 1.4.5, ore/worldgen info for jei users (emi-ores covers emi). no deps.
 jei-worldgen | 1.4.5+neoforge-1.21.1 | auto
@@ -924,6 +924,7 @@ bundle:https://edge.forgecdn.net/files/5587/515/CTM-1.21-1.2.1%2B3.jar | 1.21-1.
 ## HELD, not live in this draft: it was compiled against thaumaturge 1.0.2, and the pack ships 1.0.3. three calls it makes are gone in
 ## 1.0.3 (WandVisHelper.consumeAllVisRaw, ArcaneCraftingTransaction.craft(...,boolean), IVisRelaySource.drainCentivis(...,boolean)),
 ## and the arcane assembler hits one from its ae2 grid tick. wait for a build against thaumaturge 1.0.3, then re-run the ref check.
+## 10-22-2026: pack moves to thaumaturge 1.0.6, WandVisHelper still has no consumeAllVisRaw there, so this stays held.
 ## ae2 [19.2.17,20) ok with 19.2.18, ae2wtlib optional ok with 19.5.1. sha512 prefix c982afab.
 # bundle:https://edge.forgecdn.net/files/9114/162/appliedthaumaturge-1.0.0-BETA.jar | 1.0.0-BETA | server   # cf 1718689/9114162
 
