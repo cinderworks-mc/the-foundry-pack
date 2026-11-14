@@ -7,6 +7,105 @@ only the non-empty ones), one bullet per line, no wrapping. the download page's
 3-line summary is the first added mods / added features bullets. entries older
 than 0.2.8 predate the format and stay as written.
 
+## 1.0.16 (11-13-2026)
+
+### added mods
+- Create: Chromeware
+- Player Animation Library
+- Applied Thaumaturge
+
+### updated mods
+- [EMF] Entity Model Features
+- [ETF] Entity Texture Features
+- Aaron
+- Ace's Spell Utils
+- AE2 Lightning Tech
+- AEInfinityBooster
+- Amendments
+- Apotheosis
+- Apothic Attributes
+- Apothic-Enchanting
+- Applied Create
+- Applied Energistics 2
+- Ars Nouveau
+- Ars Ocultas
+- Astral Sorcery
+- AzureLib
+- Balm
+- Building Gadgets 2
+- CC: Redstone Link Bridge
+- Collective
+- Cosmetica
+- CraftedCore
+- Create Aeronautics: Gadgets & Gizmos
+- Create Cobblestone
+- Create Encased
+- Create More: Package Couriers
+- Create: Apokinetics
+- Create: Copycats+
+- Create: Let The Adventure Begin
+- CreativeCore
+- Cubes Without Borders
+- Data Anchor
+- Ecologics
+- Enhanced Celestials 2: Core
+- Enhanced Celestials 2: Default Lunar Events
+- Enhanced Celestials 2: Shader Support
+- Entity Culling
+- Excessive Utilities
+- Explorify
+- Exposure
+- Farmer's Spell 'n Spell Book
+- Foundry Additions
+- Fresh Animations
+- Fresh Animations: Creepers
+- Fresh Animations: Details
+- Fresh Animations: Emissive
+- Fresh Animations: Quivers
+- Fresh Animations: Spiders
+- FTB Library
+- FTB Teams
+- Ghost
+- Goety - The Dark Arts
+- GuideME
+- Hats
+- Hephaestus Forge
+- Hephaestus Tools
+- Integrated API
+- Inventory Tweaks: ReFoxed
+- Iron's Lib
+- JAWR: Forbidden Magic
+- Just Another Witchery Remake
+- Just Enough Effect Descriptions (JEED)
+- Just Enough Items (JEI)
+- KotlinLangForge
+- KubeJS
+- LeafRTP | Random Teleport
+- ModernFix
+- Modonomicon
+- Moonlight Lib
+- More Culling
+- Mystical Agriculture
+- Neo Vitae
+- NeoSync
+- Occultism
+- owo-lib
+- Placebo
+- Puzzles Lib
+- Quark
+- Reconnectible Chains
+- RightClickHarvest
+- ShatterLib | OctoLib
+- Sodium Extra
+- SuperMartijn642's Core Lib
+- Supplementaries
+- TFMG Community Edition
+- Thaumaturge
+- The Bumblezone - NeoForge/Forge
+- Thunderbolt Core
+- Villager Names
+- Whimscape x Fresh Animations
+
 ## 1.0.15 (10-22-2026)
 
 ### updated mods
